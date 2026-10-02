@@ -50,11 +50,25 @@ Use `@/jsonresume/schema.json` as the source of truth for what fields and struct
 1. Read `/resume.json` and extract existing data.
 2. Read the user-provided file and extract any resume-relevant data.
 3. Compare the extracted data against `/resume.json`.
-4. For each **missing or incomplete** item detected in the input file:
-   - Show the user what was found.
-   - Ask whether it should be added to `/resume.json`.
-5. If the user confirms, append or update the item in `/resume.json` while preserving the existing structure and formatting style.
-6. Increase the second digit in the version number in `/resume.json`.
+4. For each top-level section below, **in order**:
+   - `basics`
+   - `work`
+   - `volunteer`
+   - `education`
+   - `awards`
+   - `certificates`
+   - `publications`
+   - `skills`
+   - `languages`
+   - `interests`
+   - `references`
+   - `projects`
+   - `meta`
+5. For the current section, identify any **missing or incomplete** items from the input file.
+6. If missing/incomplete items exist, **show them to the user** and ask what they want to do for that section (for example: add all, add selected items only, skip, or update existing entries).
+7. Apply only the changes the user explicitly confirms for that section.
+8. After each confirmed change, **save the updated data back to `/resume.json`** while preserving the existing structure and formatting style.
+9. After all sections have been processed, **increase the second digit in the version number** in `/resume.json`.
 
 ## Rules
 
