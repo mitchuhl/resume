@@ -20,7 +20,11 @@
         "username": "michael-de-graaf-software-developer",
         "url": "https://www.linkedin.com/in/michael-de-graaf-software-developer/"
       }
-    ]
+    ],
+    "maritalStatus": "Married with 3 children",
+    "birthDate": "1981-10-15",
+    "birthPlace": "Meppel, NL",
+    "nationality": "Dutch"
   },
   "work": [
     {
@@ -87,13 +91,13 @@
       "highlights": []
     },
     {
-      "name": "Wija Koers B.V.",
-      "position": "System Administrator / Developer",
-      "startDate": "2002",
-      "endDate": "2007",
+      "name": "Wija Koers Relatiemarketing",
+      "position": "System Administrator",
+      "startDate": "2006-04",
+      "endDate": "2007-04",
       "location": "Hoogersmilde, Netherlands",
-      "description": "company: Wija Koers B.V.\nrole: System Administrator / Developer, SEO, Lotus Notes/Domino, Apache, PHP, MySQL, Lotus script, web server, mail server, SendMail, DNS, domain name registration",
-      "summary": "SEO, Lotus Notes/Domino, Apache, PHP, MySQL, Lotus script, web server, mail server, SendMail, DNS, domain name registration",
+      "description": "company: Wija Koers Relatiemarketing\nrole: System Administrator, server and workstation management, domain name registration, email management, DNS, application installation, coordinate programmers, system and database design, search engine product development, Lotus web applications",
+      "summary": "server and workstation management, domain name registration, email management, DNS, application installation",
       "highlights": []
     },
     {
@@ -107,6 +111,61 @@
       "highlights": [
         "graduation",
         "production ready .net rendered control"
+      ]
+    },
+    {
+      "name": "Frans' Fotografie",
+      "position": "Web Designer",
+      "startDate": "2005-01",
+      "endDate": "2005-05",
+      "location": "Zwolle, Netherlands",
+      "description": "company: Frans' Fotografie\nrole: web design, website design, Flash implementation, dynamic photo gallery with PHP",
+      "summary": "website design, Flash implementation, dynamic photo gallery",
+      "highlights": [
+        "work-based learning assignment",
+        "dynamic photo gallery via PHP script"
+      ]
+    },
+    {
+      "name": "De Kooi systeemhuis",
+      "position": "Intern",
+      "startDate": "2003-01",
+      "endDate": "2003-06",
+      "location": "Ruinen, Netherlands",
+      "description": "company: De Kooi systeemhuis\nrole: internship, central relationship management system, SCSI disk network coupling, Novell network, ADSL check application, PHP Codecharge",
+      "summary": "central relationship management system, network setup, ADSL check application",
+      "highlights": [
+        "import existing address databases",
+        "SCSI disk network coupling on Linux",
+        "Novell network installation",
+        "ADSL check on postal code"
+      ]
+    },
+    {
+      "name": "Wija Koers Relatiemarketing",
+      "position": "Assistant Programmer",
+      "startDate": "2002-02",
+      "endDate": "2006-04",
+      "location": "Hoogersmilde, Netherlands",
+      "description": "company: Wija Koers Relatiemarketing\nrole: Assistant Programmer, develop search engine product, registration software, research reports, research application, client applications, time registration system",
+      "summary": "develop search engine product, client applications, time registration system",
+      "highlights": [
+        "search engine product became one of best sold products in 2006"
+      ]
+    },
+    {
+      "name": "Wija Koers Relatiemarketing",
+      "position": "Intern",
+      "startDate": "2001-08",
+      "endDate": "2002-01",
+      "location": "Hoogersmilde, Netherlands",
+      "description": "company: Wija Koers Relatiemarketing\nrole: internship, research search engines, develop search engine positioning product, Lotus Notes, Domino Designer, Linux server installations",
+      "summary": "research search engines, develop search engine positioning product",
+      "highlights": [
+        "client day presentation Adobe Atmosphere",
+        "wireless network setup",
+        "website troubleshooting",
+        "manuals and product sheets"
       ]
     }
   ],
@@ -133,20 +192,42 @@
         "c",
         "c++",
         "Java",
+        "J2ME",
         "PHP",
         "Project Management Methodologies",
-        "Spanish"
+        "Spanish",
+        "DirectX",
+        "Oracle",
+        "RAD",
+        "SDM",
+        "NIAM"
       ],
-      "url": "https://www.windesheim.nl/"
+      "url": "https://www.windesheim.nl"
+    },
+    {
+      "institution": "Deltion College, NL",
+      "area": "Middenkaderfunctionaris kantoorautomatisering",
+      "studyType": "Middenkaderfunctionaris",
+      "startDate": "",
+      "endDate": "2003",
+      "courses": [
+        "Pascal",
+        "C++",
+        "Delphi",
+        "DBase4",
+        "Access",
+        "OO"
+      ],
+      "url": "https://www.deltion.nl"
     },
     {
       "institution": "Bornego College, NL",
-      "area": "",
-      "studyType": "",
+      "area": "Mavo (D)",
+      "studyType": "Mavo",
       "startDate": "",
-      "endDate": "",
+      "endDate": "1999",
       "courses": [],
-      "url": ""
+      "url": "https://www.bornego.nl"
     }
   ],
   "awards": [],
@@ -158,6 +239,10 @@
     {
       "name": "Foundational C# with Microsoft",
       "issuer": "Microsoft"
+    },
+    {
+      "name": "Cisco Certificate",
+      "issuer": "Cisco"
     }
   ],
   "publications": [],
@@ -174,12 +259,13 @@
         "Node.js",
         "PHP",
         "Java",
-        "J2ME",
         "Back end development",
         "Code Review",
         "C#",
         "ASP.NET MVC",
-        "Mobile Applications"
+        "Mobile Applications",
+        "Visual Basics",
+        "Lotus Script"
       ]
     },
     {
@@ -193,8 +279,8 @@
         "Lotus Notes",
         "Data Architecture",
         "ERD",
-        "SQL",
-        "ETL"
+        "ETL",
+        "Lotus (nsf)"
       ]
     },
     {
@@ -234,7 +320,8 @@
         "Responsive Web Design",
         "AJAX",
         "SEO",
-        "Search Engine Ranking"
+        "Search Engine Ranking",
+        "Flash MX 2004"
       ]
     },
     {
@@ -244,7 +331,16 @@
         "Linux-server",
         "Apache",
         "IIS",
-        "DNS management"
+        "DNS management",
+        "LDAP"
+      ]
+    },
+    {
+      "name": "Methodologies",
+      "level": "Expert",
+      "keywords": [
+        "OO",
+        "Diverse architecturen en patronen"
       ]
     }
   ],
@@ -331,7 +427,7 @@
   ],
   "meta": {
     "canonical": "https://raw.githubusercontent.com/mitchuhl/resume/refs/heads/main/resume.json",
-    "version": "v0.4.0",
-    "lastModified": "2026-10-02T19:28:24"
+    "version": "v0.5.0",
+    "lastModified": "2026-10-02T19:40:58"
   }
 }
