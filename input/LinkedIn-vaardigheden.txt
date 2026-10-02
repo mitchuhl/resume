@@ -1,0 +1,86 @@
+Skills
+
+.NET
+Foundational C# with Microsoft
+
+VB.NET
+Graduate at Ifective ICT Services bv
+
+ASP.NET MVC
+Graduate at Ifective ICT Services bv
+
+Lotus Notes
+System Administrator / Developer at Wija Koers B.V.
+
+Linux-server
+System Administrator / Developer at Wija Koers B.V.
+
+MySQL
+System Administrator / Developer at Wija Koers B.V.
+
+Team Leadership
+Product Owner at DataBalk
+
+Node.js
+Product Owner at DataBalk
+
+ETL
+Product Owner at DataBalk
+
+Microsoft Azure
+Microsoft Certified: Azure Fundamentals
+
+Azure DevOps
+
+Databases
+
+C#
+Foundational C# with Microsoft
+
+Back-End Web Development
+
+Web Development
+Graduate at Ifective ICT Services bv
+
+Microsoft SQL Server
+
+PHP
+System Administrator / Developer at Wija Koers B.V.
+
+HTML
+
+CSS
+
+JavaScript
+
+AJAX
+
+Scrum
+Product Owner at DataBalk
+
+Apache
+
+Data Architecture
+
+Mobile Applications
+
+Responsive Web Design
+
+SQL
+
+ASP.NET
+
+Java
+
+J2ME
+
+RESTful WebServices
+
+IIS
+
+SEO
+System Administrator / Developer at Wija Koers B.V.
+
+Search Engine Ranking
+
+DNS management

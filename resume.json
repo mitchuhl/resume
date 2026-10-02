@@ -176,7 +176,10 @@
         "Java",
         "J2ME",
         "Back end development",
-        "Code Review"
+        "Code Review",
+        "C#",
+        "ASP.NET MVC",
+        "Mobile Applications"
       ]
     },
     {
@@ -187,6 +190,7 @@
         "MySQL",
         "PostgreSQL",
         "Lotus Domino",
+        "Lotus Notes",
         "Data Architecture",
         "ERD",
         "SQL",
@@ -198,6 +202,7 @@
       "level": "Expert",
       "keywords": [
         "Azure",
+        "Azure DevOps",
         "Google Cloud"
       ]
     },
@@ -215,16 +220,31 @@
       "level": "Expert",
       "keywords": [
         "Stakeholder Management",
-        "Release Management"
+        "Release Management",
+        "Team Leadership"
       ]
     },
     {
-      "name": "Webdevelopment",
+      "name": "Web Development",
       "level": "Expert",
       "keywords": [
         "html",
         "css",
-        "javascript"
+        "Javascript",
+        "Responsive Web Design",
+        "AJAX",
+        "SEO",
+        "Search Engine Ranking"
+      ]
+    },
+    {
+      "name": "System Administration",
+      "level": "Expert",
+      "keywords": [
+        "Linux-server",
+        "Apache",
+        "IIS",
+        "DNS management"
       ]
     }
   ],
@@ -307,7 +327,7 @@
   ],
   "meta": {
     "canonical": "https://raw.githubusercontent.com/mitchuhl/resume/refs/heads/main/resume.json",
-    "version": "v0.2.0",
-    "lastModified": "2026-10-02T18:58:32"
+    "version": "v0.3.0",
+    "lastModified": "2026-10-02T19:11:30"
   }
 }

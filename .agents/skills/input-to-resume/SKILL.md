@@ -17,15 +17,15 @@ Read a user-provided file, detect resume-relevant information that is **not yet 
 
 ## PDF Text Extraction
 
-For PDF input, extract text with the bundled `mutool.exe` in `tools/` using:
+For PDF input, extract text with the bundled `mutool.exe` using its path relative to the project root:
 
-- `tools\mutool.exe convert -F text -o output.txt input.pdf`
+- `.agents\skills\input-to-resume\tools\mutool.exe convert -F text -o temp\[filename].txt [input.pdf]`
 
 Then parse the resulting TXT file as the resume source.
 
 ## Tools
 
-This skill expects `mutool.exe` in `tools/mutool.exe`.
+This skill expects `mutool.exe` at `.agents\skills\input-to-resume\tools\mutool.exe`.
 
 ## Reference Schema
 
