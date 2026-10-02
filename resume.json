@@ -24,6 +24,79 @@
   },
   "work": [
     {
+      "name": "Probust",
+      "position": "Owner",
+      "startDate": "2025-05",
+      "endDate": "present",
+      "location": "Gelderland, Netherlands",
+      "description": "company: one-man standard software development\nrole: owner, back-end/front-end, network management, SEO, data structures, reporting",
+      "summary": "one-man company standard software, complete package delivery",
+      "highlights": [
+        "low overhead costs",
+        "complete package delivery"
+      ]
+    },
+    {
+      "name": "KWEEKERS",
+      "position": "Product Owner, Senior Developer",
+      "startDate": "2024-04",
+      "endDate": "present",
+      "location": "Oosterhout",
+      "description": "company: low-code integration platform U-Turn\nrole: Product Owner, Senior Developer, connect applications without programming knowledge",
+      "summary": "low-code integration platform U-Turn, connect applications without programming knowledge",
+      "highlights": [
+        "prevent duplicate entry",
+        "keep data up to date",
+        "customization from standard applications",
+        "support migrations between packages"
+      ]
+    },
+    {
+      "name": "DataBalk",
+      "position": "Product Owner",
+      "startDate": "2021-07",
+      "endDate": "2024-04",
+      "location": "Utrecht, Netherlands",
+      "description": "company: integration between IRIS and ERP systems\nrole: Product Owner, develop IRIS suite components",
+      "summary": "integration between IRIS and ERP systems, IRIS suite components",
+      "highlights": [
+        "client application for service workers",
+        "tenant portal and intranet",
+        "back-end, integration layer, image processor",
+        "mailing, telephony, document synchronization, reporting"
+      ]
+    },
+    {
+      "name": "Kubion B.V.",
+      "position": "Technical Architect",
+      "startDate": "2018-10",
+      "endDate": "2021-07",
+      "location": "Netherlands",
+      "description": "company: Kubion B.V.\nrole: Technical Architect",
+      "summary": "",
+      "highlights": []
+    },
+    {
+      "name": "Kubion B.V.",
+      "position": "Software Engineer",
+      "startDate": "2007-04",
+      "endDate": "2018-10",
+      "location": "Netherlands",
+      "description": "company: Kubion B.V.\nrole: Software Engineer, web-based applications, ASP.NET, MSSQL, SSAS, JavaScript, Ajax, REST services",
+      "summary": "web-based applications, ASP.NET, MSSQL, SSAS, JavaScript, Ajax, REST services",
+      "highlights": []
+    },
+    {
+      "name": "Wija Koers B.V.",
+      "position": "System Administrator / Developer",
+      "startDate": "2002",
+      "endDate": "2007",
+      "location": "Hoogersmilde, Netherlands",
+      "description": "company: Wija Koers B.V.\nrole: System Administrator / Developer, SEO, Lotus Notes/Domino, Apache, PHP, MySQL, Lotus script, web server, mail server, SendMail, DNS, domain name registration",
+      "summary": "SEO, Lotus Notes/Domino, Apache, PHP, MySQL, Lotus script, web server, mail server, SendMail, DNS, domain name registration",
+      "highlights": []
+    },
+    {
       "name": "Ifective ICT Services bv",
       "position": "Graduation Intern",
       "startDate": "2005-11",
@@ -68,7 +141,16 @@
     }
   ],
   "awards": [],
-  "certificates": [],
+  "certificates": [
+    {
+      "name": "Microsoft Certified: Azure Fundamentals",
+      "issuer": "Microsoft"
+    },
+    {
+      "name": "Foundational C# with Microsoft",
+      "issuer": "Microsoft"
+    }
+  ],
   "publications": [],
   "skills": [
     {
