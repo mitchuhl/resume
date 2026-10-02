@@ -138,6 +138,15 @@
         "Spanish"
       ],
       "url": "https://www.windesheim.nl/"
+    },
+    {
+      "institution": "Bornego College, NL",
+      "area": "",
+      "studyType": "",
+      "startDate": "",
+      "endDate": "",
+      "courses": [],
+      "url": ""
     }
   ],
   "awards": [],
@@ -165,7 +174,9 @@
         "Node.js",
         "PHP",
         "Java",
-        "J2ME"
+        "J2ME",
+        "Back end development",
+        "Code Review"
       ]
     },
     {
@@ -177,7 +188,43 @@
         "PostgreSQL",
         "Lotus Domino",
         "Data Architecture",
-        "ERD"
+        "ERD",
+        "SQL",
+        "ETL"
+      ]
+    },
+    {
+      "name": "Cloud",
+      "level": "Expert",
+      "keywords": [
+        "Azure",
+        "Google Cloud"
+      ]
+    },
+    {
+      "name": "Agile",
+      "level": "Expert",
+      "keywords": [
+        "Sprint Planning",
+        "SCRUM",
+        "User Story Mapping"
+      ]
+    },
+    {
+      "name": "Product Management",
+      "level": "Expert",
+      "keywords": [
+        "Stakeholder Management",
+        "Release Management"
+      ]
+    },
+    {
+      "name": "Webdevelopment",
+      "level": "Expert",
+      "keywords": [
+        "html",
+        "css",
+        "javascript"
       ]
     }
   ],
@@ -260,7 +307,7 @@
   ],
   "meta": {
     "canonical": "https://raw.githubusercontent.com/mitchuhl/resume/refs/heads/main/resume.json",
-    "version": "v0.1.0",
-    "lastModified": "2026-10-02T17:10:00"
+    "version": "v0.2.0",
+    "lastModified": "2026-10-02T18:58:32"
   }
 }

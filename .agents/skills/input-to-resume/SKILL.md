@@ -54,6 +54,7 @@ Use `@/jsonresume/schema.json` as the source of truth for what fields and struct
    - Show the user what was found.
    - Ask whether it should be added to `/resume.json`.
 5. If the user confirms, append or update the item in `/resume.json` while preserving the existing structure and formatting style.
+6. Increase the second digit in the version number in `/resume.json`.
 
 ## Rules
 
