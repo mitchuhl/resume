@@ -1,0 +1,184 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "basics": {
+    "name": "Michael de Graaf",
+    "label": "Product Owner and Software Engineer",
+    "email": "mrdegraaf@gmail.com",
+    "phone": "+31625360524",
+    "url": "https://www.probust.eu",
+    "summary": "- interests: software development, strategy, data\n- private: father of 3, mountainbike, running",
+    "location": {
+      "address": "Colijnstraat",
+      "city": "Culemborg",
+      "region": "Gelderland",
+      "postalCode": "4102EZ",
+      "countryCode": "NL"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "michael-de-graaf-software-developer",
+        "url": "https://www.linkedin.com/in/michael-de-graaf-software-developer/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Ifective ICT Services bv",
+      "position": "Graduation Intern",
+      "startDate": "2005-11",
+      "endDate": "2006-04",
+      "location": "'t Harde, NL",
+      "description": "company: custom software development\nrole: internship, create vb.net calendar component",
+      "summary": "create vb.net calendar component",
+      "highlights": [
+        "graduation",
+        "production ready .net rendered control"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "PKN Culemborg, NL",
+      "position": "Children's service leader",
+      "startDate": "2009-10",
+      "summary": "plan child service, lead child service",
+      "highlights": [
+        "conveying the Christian faith"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Windesheim, NL",
+      "area": "Computer Science",
+      "studyType": "Bachelor of Science (BSc)",
+      "startDate": "2003",
+      "endDate": "2006",
+      "courses": [
+        "programming in Pascal",
+        "c",
+        "c++",
+        "Java",
+        "PHP",
+        "Project Management Methodologies",
+        "Spanish"
+      ],
+      "url": "https://www.windesheim.nl/"
+    }
+  ],
+  "awards": [],
+  "certificates": [],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Software Development",
+      "level": "Expert",
+      "keywords": [
+        "C# .NET",
+        "Microsoft .NET Framework",
+        "VB .NET",
+        "dotnet",
+        "ASP.NET",
+        "Node.js",
+        "PHP",
+        "Java",
+        "J2ME"
+      ]
+    },
+    {
+      "name": "Database",
+      "level": "Expert",
+      "keywords": [
+        "MSSQL (Microsoft SQL Server)",
+        "MySQL",
+        "PostgreSQL",
+        "Lotus Domino",
+        "Data Architecture",
+        "ERD"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Dutch",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "C1"
+    },
+    {
+      "language": "German",
+      "fluency": "A2"
+    },
+    {
+      "language": "French",
+      "fluency": "A2"
+    },
+    {
+      "language": "Spanish",
+      "fluency": "A1"
+    },
+    {
+      "language": "Kiswahili",
+      "fluency": "A1"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Software Development",
+      "keywords": [
+        "Learn new languages",
+        "high performance challanges",
+        "personal projects"
+      ]
+    },
+    {
+      "name": "Sports",
+      "keywords": [
+        "Running",
+        "Mountainbike"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Frank Blom",
+      "reference": "Owner at Kubion, tightly worked together to create software solutions for housing corporations"
+    }
+  ],
+  "projects": [
+    {
+      "name": "KIM",
+      "description": "Kubion Integration Module integrates tenant and customer care portals to ERP and other systems",
+      "startDate": "2015-01",
+      "endDate": "2024-04",
+      "url": "https://www.corporatiegids.nl/nl/nieuws/jos_balk_databalk_overname_kubion_versterkt_onze_positie_in_het_domein_klantenservice-6885",
+      "highlights": [
+        "Integrate systems",
+        "data adapters",
+        "data synchronisation (initial load, incremental load, pubsub)"
+      ],
+      "keywords": [
+        "ERP integration",
+        "Payment providers (eg. iDEAL and Ogone)",
+        "vacancy and hiring systems",
+        "DMS"
+      ],
+      "entity": "Kubion",
+      "roles": [
+        "Initiator",
+        "Backend Developer",
+        "Scrum master",
+        "Product Owner"
+      ],
+      "type": "Software Development"
+    }
+  ],
+  "meta": {
+    "canonical": "https://github.com/mitchuhl/resume/resume.json",
+    "version": "v0.1.0",
+    "lastModified": "2026-10-02T17:10:00"
+  }
+}
