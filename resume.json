@@ -177,7 +177,7 @@
     }
   ],
   "meta": {
-    "canonical": "https://github.com/mitchuhl/resume/resume.json",
+    "canonical": "https://raw.githubusercontent.com/mitchuhl/resume/refs/heads/main/resume.json",
     "version": "v0.1.0",
     "lastModified": "2026-10-02T17:10:00"
   }
