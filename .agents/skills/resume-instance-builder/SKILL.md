@@ -103,6 +103,11 @@ Do not continue until all three inputs have been collected.
     - **Compact education courses**: remove courses from education entries when they are irrelevant to the vacancy. Keep relevant courses only.
     - **Languages**: keep only languages requested in the vacancy or that are relevant to the role. Remove low-grade languages unless specifically asked for in the vacancy. Strongest languages must stay.
 
+6. **Review and reflect**
+   - Tell the user who you are (based on the audience you've been given) and that you are going to read his resume (`resume-instance.json`).
+   - Read the generated `resume-instance.json`.
+   - Return to the user: What do you think of it now reading it? Does the candidate fit? Is all text in the resume spelled correctly? Does the language match? Is the text written by human and not an AI agent?
+
 ## Audience Perspective Rules
 
 - **Corporate / Enterprise**: emphasise stability, scale, governance, delivery, stakeholder management, and process.

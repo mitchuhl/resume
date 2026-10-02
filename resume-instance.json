@@ -1,0 +1,279 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "basics": {
+    "name": "Michael de Graaf",
+    "label": "Product Owner Systeemintegratie",
+    "email": "mrdegraaf@gmail.com",
+    "phone": "+31625360524",
+    "url": "https://www.probust.eu",
+    "summary": "Ervaren Product Owner met een technische achtergrond in systeemintegratie, cloudplatformen en agile werken. Gespecialiseerd in het opstellen en bewaken van roadmaps, stakeholdermanagement en het vertalen van strategische doelen naar concrete verbeteringen binnen complexe IT-landschappen.",
+    "location": {
+      "address": "Colijnstraat",
+      "city": "Culemborg",
+      "region": "Gelderland",
+      "postalCode": "4102EZ",
+      "countryCode": "NL"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "michael-de-graaf-software-developer",
+        "url": "https://www.linkedin.com/in/michael-de-graaf-software-developer/"
+      }
+    ],
+    "maritalStatus": "Getrouwd met 3 kinderen",
+    "birthDate": "1981-10-15",
+    "birthPlace": "Meppel, NL",
+    "nationality": "Nederlands"
+  },
+  "work": [
+    {
+      "name": "KWEEKERS",
+      "position": "Product Owner, Senior Developer",
+      "startDate": "2024-04",
+      "endDate": "present",
+      "location": "Oosterhout",
+      "description": "Product Owner en Senior Developer bij KWEEKERS, verantwoordelijk voor het low-code integratieplatform U-Turn. Ik bepaal samen met het team en stakeholders welke werkzaamheden de meeste waarde toevoegen, ontwikkel de roadmap en zorg voor inzicht in het integratielandschap. Mijn focus ligt op het verbinden van applicaties zonder programmeerkennis, het voorkomen van dubbele invoer en het up-to-date houden van gegevens.",
+      "summary": "Product Owner en Senior Developer voor het low-code integratieplatform U-Turn: applicaties verbinden zonder programmeerkennis.",
+      "highlights": [
+        "Bepalen van prioriteiten samen met stakeholders en team",
+        "Migraties tussen pakketten ondersteunen",
+        "Maatwerk mogelijk maken vanuit standaardapplicaties"
+      ]
+    },
+    {
+      "name": "DataBalk",
+      "position": "Product Owner",
+      "startDate": "2021-07",
+      "endDate": "2024-04",
+      "location": "Utrecht, Nederland",
+      "description": "Product Owner bij DataBalk, waar ik verantwoordelijk was voor integratie tussen IRIS- en ERP-systemen. Ik ontwikkelde IRIS-suitecomponenten en werkte nauw samen met opdrachtgevers en het team om klantapplicaties, tenantportalen, backend- en integratielagen te realiseren. Daarnaast verzorgde ik mailing, telefonie, documentsynchronisatie en rapportage.",
+      "summary": "Product Owner voor integratie tussen IRIS- en ERP-systemen en ontwikkeling van IRIS-suitecomponenten.",
+      "highlights": [
+        "Klantapplicatie voor dienstverleners",
+        "Tenant portal en intranet",
+        "Back-end, integratielaag en beeldverwerking",
+        "Mailing, telefonie, documentsynchronisatie en rapportage"
+      ]
+    },
+    {
+      "name": "Probust",
+      "position": "Owner",
+      "startDate": "2025-05",
+      "endDate": "present",
+      "location": "Gelderland, Netherlands",
+      "description": "Eigenaar van een eenmanssoftwarebedrijf dat standaardsoftware levert. Ik verzorg de volledige package: back-end, front-end, netwerkbeheer, SEO, datastructuren en rapportage. Deze ondernemerschap heeft me geleerd om zelfstandig prioriteiten te stellen, initiatief te nemen en volledige verantwoordelijkheid te dragen voor producten.",
+      "summary": "Eigenaar van een eenmanssoftwarebedrijf: complete package delivery met lage overheadkosten.",
+      "highlights": [
+        "Lage overheadkosten door eenmansbedrijf",
+        "Complete package delivery van ontwerp tot onderhoud"
+      ]
+    },
+    {
+      "name": "Kubion B.V.",
+      "position": "Technical Architect",
+      "startDate": "2018-10",
+      "endDate": "2021-07",
+      "location": "Nederland",
+      "description": "Technical Architect bij Kubion B.V., waar ik de technische architectuur van softwareoplossingen voor woningcorporaties ontwierp en bewaakte.",
+      "summary": "Technical Architect: ontwerp en bewaking van technische architectuur voor woningcorporaties.",
+      "highlights": []
+    },
+    {
+      "name": "Kubion B.V.",
+      "position": "Software Engineer",
+      "startDate": "2007-04",
+      "endDate": "2018-10",
+      "location": "Nederland",
+      "description": "Software Engineer bij Kubion B.V., gespecialiseerd in webapplicaties met ASP.NET, MSSQL, SSAS, JavaScript, Ajax en REST-services. Ik werkte aan oplossingen voor woningcorporaties en bouwde daarmee de technische basis voor latere integratiewerkzaamheden.",
+      "summary": "Software Engineer: webapplicaties met ASP.NET, MSSQL, SSAS, JavaScript, Ajax en REST-services.",
+      "highlights": []
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "Windesheim, NL",
+      "area": "Computer Science",
+      "studyType": "Bachelor of Science (BSc)",
+      "startDate": "2003",
+      "endDate": "2006",
+      "courses": [
+        "programming in Pascal",
+        "c",
+        "c++",
+        "Java",
+        "J2ME",
+        "PHP",
+        "Project Management Methodologies"
+      ],
+      "url": "https://www.windesheim.nl"
+    },
+    {
+      "institution": "Deltion College, NL",
+      "area": "Middenkaderfunctionaris kantoorautomatisering",
+      "studyType": "Middenkaderfunctionaris",
+      "startDate": "",
+      "endDate": "2003",
+      "courses": [
+        "Pascal",
+        "C++",
+        "Delphi",
+        "OO"
+      ],
+      "url": "https://www.deltion.nl"
+    },
+    {
+      "institution": "Bornego College, NL",
+      "area": "Mavo (D)",
+      "studyType": "Mavo",
+      "startDate": "",
+      "endDate": "1999",
+      "courses": [],
+      "url": "https://www.bornego.nl"
+    }
+  ],
+  "awards": [],
+  "certificates": [
+    {
+      "name": "Microsoft Certified: Azure Fundamentals",
+      "issuer": "Microsoft"
+    },
+    {
+      "name": "Foundational C# with Microsoft",
+      "issuer": "Microsoft"
+    }
+  ],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Agile",
+      "level": "Expert",
+      "keywords": [
+        "Sprint Planning",
+        "SCRUM",
+        "User Story Mapping"
+      ]
+    },
+    {
+      "name": "Product Management",
+      "level": "Expert",
+      "keywords": [
+        "Stakeholder Management",
+        "Release Management",
+        "Team Leadership"
+      ]
+    },
+    {
+      "name": "Cloud",
+      "level": "Expert",
+      "keywords": [
+        "Azure",
+        "Azure DevOps",
+        "Google Cloud"
+      ]
+    },
+    {
+      "name": "Software Development",
+      "level": "Expert",
+      "keywords": [
+        "C# .NET",
+        "ASP.NET",
+        "Node.js",
+        "PHP",
+        "Java",
+        "Back end development",
+        "Code Review",
+        "C#",
+        "ASP.NET MVC"
+      ]
+    },
+    {
+      "name": "Database",
+      "level": "Expert",
+      "keywords": [
+        "MSSQL (Microsoft SQL Server)",
+        "MySQL",
+        "PostgreSQL",
+        "ETL"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Dutch",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "C1"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Softwareontwikkeling",
+      "keywords": [
+        "Nieuwe talen leren",
+        "Hoge performance-uitdagingen",
+        "Persoonlijke projecten"
+      ]
+    },
+    {
+      "name": "Sport",
+      "keywords": [
+        "Hardlopen",
+        "Mountainbiken"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Frank Blom",
+      "reference": "Eigenaar bij Kubion, hebben nauw samengewerkt om softwareoplossingen voor woningcorporaties te creëren."
+    },
+    {
+      "name": "Jason Landbrug",
+      "reference": "Gewerkt met Michael in hetzelfde team als Product Owner en senior developer. Blijft kalm onder druk, brengt verschillende belangen en prioriteiten in evenwicht en vertaalt technisch inzicht naar sterke productbeslissingen."
+    }
+  ],
+  "projects": [
+    {
+      "name": "KIM",
+      "description": "Kubion Integration Module integreert tenant- en klantenserviceportalen met ERP en andere systemen. Het project omvat systemen integreren, data adapters en datasynchronisatie (initiële belading, incrementele belading, pubsub).",
+      "startDate": "2015-01",
+      "endDate": "2024-04",
+      "url": "https://www.corporatiegids.nl/nl/nieuws/jos_balk_databalk_overname_kubion_versterkt_onze_positie_in_het_domein_klantenservice-6885",
+      "highlights": [
+        "Systemen integreren",
+        "Data adapters",
+        "Datasynchronisatie (initiële belading, incrementele belading, pubsub)"
+      ],
+      "keywords": [
+        "ERP-integratie",
+        "Betaalproviders (bijv. iDEAL en Ogone)",
+        "Vacature- en wervingssystemen",
+        "DMS"
+      ],
+      "entity": "Kubion",
+      "roles": [
+        "Initiator",
+        "Backend Developer",
+        "Scrum master",
+        "Product Owner"
+      ],
+      "type": "Software Development"
+    }
+  ],
+  "meta": {
+    "canonical": "https://raw.githubusercontent.com/mitchuhl/resume/refs/heads/main/resume.json",
+    "version": "v0.5.0",
+    "lastModified": "2026-10-02T20:40:00Z",
+    "vacancyContext": {
+      "companyType": "Higher Education",
+      "role": "Product Owner Systeemintegratie",
+      "vacancySource": "https://www.linkedin.com/jobs/view/product-owner-systeemintegratie-at-hu-university-of-applied-sciences-utrecht-hogeschool-utrecht-4464885019/",
+      "vacancyLanguage": "Dutch",
+      "audience": "HR en Manager IM&ICT bij HU University of Applied Sciences Utrecht, een hogeschool in de (semi)publieke sector. De organisatie waardeert agile werken, betrouwbaarheid, samenwerking en maatschappelijke impact."
+    }
+  }
+}
