@@ -66,7 +66,7 @@
       "highlights": [
         "client application for service workers",
         "tenant portal and intranet",
-        "back-end, integration layer, image processor",
+        "back-end, integration layer",
         "mailing, telephony, document synchronization, reporting"
       ]
     },
@@ -188,13 +188,12 @@
       "startDate": "2003",
       "endDate": "2006",
       "courses": [
-        "programming in Pascal",
         "c",
         "c++",
         "Java",
         "J2ME",
         "PHP",
-        "Project Management Methodologies",
+        "Project Management",
         "Spanish",
         "DirectX",
         "Oracle",
@@ -206,8 +205,8 @@
     },
     {
       "institution": "Deltion College, NL",
-      "area": "Middenkaderfunctionaris kantoorautomatisering",
-      "studyType": "Middenkaderfunctionaris",
+      "area": "Computer Science",
+      "studyType": "MBO",
       "startDate": "",
       "endDate": "2003",
       "courses": [

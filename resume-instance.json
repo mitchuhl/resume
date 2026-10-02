@@ -31,7 +31,6 @@
       "name": "KWEEKERS",
       "position": "Product Owner, Senior Developer",
       "startDate": "2024-04",
-      "endDate": "present",
       "location": "Oosterhout",
       "description": "Product Owner en Senior Developer bij KWEEKERS, verantwoordelijk voor het low-code integratieplatform U-Turn. Ik bepaal samen met het team en stakeholders welke werkzaamheden de meeste waarde toevoegen, ontwikkel de roadmap en zorg voor inzicht in het integratielandschap. Mijn focus ligt op het verbinden van applicaties zonder programmeerkennis, het voorkomen van dubbele invoer en het up-to-date houden van gegevens.",
       "summary": "Product Owner en Senior Developer voor het low-code integratieplatform U-Turn: applicaties verbinden zonder programmeerkennis.",
@@ -60,8 +59,7 @@
       "name": "Probust",
       "position": "Owner",
       "startDate": "2025-05",
-      "endDate": "present",
-      "location": "Gelderland, Netherlands",
+      "location": "Gelderland, Nederland",
       "description": "Eigenaar van een eenmanssoftwarebedrijf dat standaardsoftware levert. Ik verzorg de volledige package: back-end, front-end, netwerkbeheer, SEO, datastructuren en rapportage. Deze ondernemerschap heeft me geleerd om zelfstandig prioriteiten te stellen, initiatief te nemen en volledige verantwoordelijkheid te dragen voor producten.",
       "summary": "Eigenaar van een eenmanssoftwarebedrijf: complete package delivery met lage overheadkosten.",
       "highlights": [
@@ -94,7 +92,7 @@
   "education": [
     {
       "institution": "Windesheim, NL",
-      "area": "Computer Science",
+      "area": "Hogere Informatica",
       "studyType": "Bachelor of Science (BSc)",
       "startDate": "2003",
       "endDate": "2006",
@@ -111,9 +109,8 @@
     },
     {
       "institution": "Deltion College, NL",
-      "area": "Middenkaderfunctionaris kantoorautomatisering",
+      "area": "Informatica",
       "studyType": "Middenkaderfunctionaris",
-      "startDate": "",
       "endDate": "2003",
       "courses": [
         "Pascal",
@@ -127,7 +124,6 @@
       "institution": "Bornego College, NL",
       "area": "Mavo (D)",
       "studyType": "Mavo",
-      "startDate": "",
       "endDate": "1999",
       "courses": [],
       "url": "https://www.bornego.nl"
@@ -239,14 +235,14 @@
   "projects": [
     {
       "name": "KIM",
-      "description": "Kubion Integration Module integreert tenant- en klantenserviceportalen met ERP en andere systemen. Het project omvat systemen integreren, data adapters en datasynchronisatie (initiële belading, incrementele belading, pubsub).",
+      "description": "Kubion Integration Module integreert tenant- en klantenserviceportalen met ERP en andere systemen.",
       "startDate": "2015-01",
       "endDate": "2024-04",
       "url": "https://www.corporatiegids.nl/nl/nieuws/jos_balk_databalk_overname_kubion_versterkt_onze_positie_in_het_domein_klantenservice-6885",
       "highlights": [
         "Systemen integreren",
         "Data adapters",
-        "Datasynchronisatie (initiële belading, incrementele belading, pubsub)"
+        "Datasynchronisatie (initiële import, incrementele import, pubsub)"
       ],
       "keywords": [
         "ERP-integratie",

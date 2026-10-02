@@ -32,17 +32,7 @@ Prompt:
 
 Continue collecting input from all sources available, until the resume.json is complete.
 
-## AI Writer
-
-Find the information of the job you want to apply to. Get the URL of the vacancy and start the skill.
-
-Prompt:
-
-```
-/resume-instance-builder:skill
-```
-
-## resume.json
+### resume.json
 
 Write only short facts to the resume.json. In a structured way.
 
@@ -53,3 +43,16 @@ role: internship, create vb.net calendar component
 And not: The company creates custom software for big companies. I did internalship at the company and wrote a calendar component.
 
 Reason for this is that later this resume.json will be input for another agent that makes nices sentences (and only pick relevant pieces for the job I apply to)
+
+## AI Writer
+
+Find the information of the job you want to apply to. Get the URL of the vacancy and start the skill.
+
+Prompt:
+
+```
+/resume-instance-builder:skill
+```
+
+## Resume designer
+
