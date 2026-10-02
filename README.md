@@ -28,6 +28,19 @@ Prompt:
 /input-to-resume:skill
 ```
 
+## Collect input
+
+Continue collecting input from all sources available, until the resume.json is complete.
+
+## AI Writer
+
+Find the information of the job you want to apply to. Get the URL of the vacancy and start the skill.
+
+Prompt:
+
+```
+/resume-instance-builder:skill
+```
 
 ## resume.json
 
