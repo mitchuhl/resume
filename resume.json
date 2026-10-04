@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "basics": {
-    "name": "Michael de Graaf",
+    "name": "Michael Raymond de Graaf",
     "label": "Product Owner and Software Engineer",
     "email": "mrdegraaf@gmail.com",
     "phone": "+31625360524",
@@ -275,7 +275,7 @@
         "Spanish",
         "DirectX",
         "Oracle",
-        "RAD",
+        "RAD (Rapid Application Development)",
         "SDM",
         "NIAM"
       ],
@@ -518,7 +518,7 @@
   ],
   "meta": {
     "canonical": "https://raw.githubusercontent.com/mitchuhl/resume/refs/heads/main/resume.json",
-    "version": "v0.6.0",
-    "lastModified": "2026-10-02T19:40:58"
+    "version": "v0.7.0",
+    "lastModified": "2026-10-04T07:36:00"
   }
 }
