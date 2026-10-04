@@ -356,7 +356,7 @@
         "ASP.NET MVC",
         "Mobile Applications",
         "Visual Basics",
-        "Lotus Script"
+        "Lotus Script and Formula"
       ]
     },
     {
@@ -405,8 +405,8 @@
       "name": "Web Development",
       "level": "Expert",
       "keywords": [
-        "html",
-        "css",
+        "HTML",
+        "CSS / SCSS / SASS",
         "Javascript",
         "Responsive Web Design",
         "AJAX",
@@ -431,7 +431,23 @@
       "level": "Expert",
       "keywords": [
         "OO",
-        "Diverse architecturen en patronen"
+        "Diverse architecturen en patronen",
+        "MVC (model - view - controller)"
+      ]
+    },
+    {
+      "name": "Applications",
+      "level": "Expert",
+      "keywords": [
+        "Mac OS",
+        "Linux - Slackware",
+        "Linux - SuSE",
+        "Linux - Redhat",
+        "Adobe Photoshop",
+        "Macromedia Flash MX",
+        "Microsoft Visio",
+        "Lotus Smartsuite",
+        "Microsoft Office (Word / Powerpoint / Excel / Outlook / Access)"
       ]
     }
   ],
@@ -518,7 +534,7 @@
   ],
   "meta": {
     "canonical": "https://raw.githubusercontent.com/mitchuhl/resume/refs/heads/main/resume.json",
-    "version": "v0.9.0",
-    "lastModified": "2026-10-04T09:46:00"
+    "version": "v0.10.0",
+    "lastModified": "2026-10-04T09:56:00"
   }
 }
