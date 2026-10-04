@@ -266,8 +266,8 @@
       "startDate": "2003",
       "endDate": "2006",
       "courses": [
-        "c",
-        "c++",
+        "C",
+        "C++",
         "Java",
         "J2ME",
         "PHP",
@@ -339,115 +339,411 @@
   "publications": [],
   "skills": [
     {
-      "name": "Software Development",
+      "name": ".NET",
+      "type": "Software Development",
       "level": "Expert",
+      "lastUsed": "2025",
+      "usedAt": "Probust, Kubion B.V., Wija Koers Relatiemarketing, Ifective ICT Services bv",
       "keywords": [
         "C# .NET",
         "Microsoft .NET Framework",
-        "VB .NET",
         "dotnet",
         "ASP.NET",
-        "Node.js",
-        "PHP",
-        "Java",
-        "Back end development",
-        "Code Review",
-        "C#",
         "ASP.NET MVC",
-        "Mobile Applications",
-        "Visual Basics",
-        "Lotus Script and Formula"
+        "VB .NET"
       ]
     },
     {
-      "name": "Database",
+      "name": "SEO",
+      "type": "Web Development",
       "level": "Expert",
+      "lastUsed": "2025",
+      "usedAt": "Probust, Kubion B.V., Wija Koers Relatiemarketing",
       "keywords": [
-        "MSSQL (Microsoft SQL Server)",
-        "MySQL",
-        "PostgreSQL",
+        "SEO",
+        "Search Engine Ranking"
+      ]
+    },
+    {
+      "name": "HTML",
+      "type": "Web Development",
+      "level": "Expert",
+      "lastUsed": "2025",
+      "usedAt": "Probust, Kubion B.V.",
+      "keywords": []
+    },
+    {
+      "name": "CSS / SCSS / SASS",
+      "type": "Web Development",
+      "level": "Expert",
+      "lastUsed": "2025",
+      "usedAt": "Probust, Kubion B.V.",
+      "keywords": []
+    },
+    {
+      "name": "Javascript",
+      "type": "Web Development",
+      "level": "Expert",
+      "lastUsed": "2025",
+      "usedAt": "Probust, Kubion B.V.",
+      "keywords": []
+    },
+    {
+      "name": "Responsive Web Design",
+      "type": "Web Development",
+      "level": "Expert",
+      "lastUsed": "2025",
+      "usedAt": "Probust, Kubion B.V.",
+      "keywords": []
+    },
+    {
+      "name": "Azure",
+      "type": "Cloud",
+      "level": "Expert",
+      "lastUsed": "2025",
+      "usedAt": "Probust, Kubion B.V.",
+      "keywords": []
+    },
+    {
+      "name": "Azure DevOps",
+      "type": "Cloud",
+      "level": "Expert",
+      "lastUsed": "2025",
+      "usedAt": "Probust, Kubion B.V.",
+      "keywords": []
+    },
+    {
+      "name": "Linux-server",
+      "type": "System Administration",
+      "level": "Expert",
+      "lastUsed": "2025",
+      "usedAt": "Probust, Kubion B.V., Wija Koers Relatiemarketing",
+      "keywords": []
+    },
+    {
+      "name": "DNS management",
+      "type": "System Administration",
+      "level": "Expert",
+      "lastUsed": "2025",
+      "usedAt": "Probust, Kubion B.V., Wija Koers Relatiemarketing",
+      "keywords": []
+    },
+    {
+      "name": "MSSQL (Microsoft SQL Server)",
+      "type": "Database",
+      "level": "Expert",
+      "lastUsed": "2025",
+      "usedAt": "Probust, Kubion B.V.",
+      "keywords": []
+    },
+    {
+      "name": "OO",
+      "type": "Methodologies",
+      "level": "Expert",
+      "lastUsed": "2018",
+      "usedAt": "Kubion B.V., Wija Koers Relatiemarketing, Windesheim, Deltion College, De Kooi systeemhuis",
+      "keywords": []
+    },
+    {
+      "name": "AJAX",
+      "type": "Web Development",
+      "level": "Expert",
+      "lastUsed": "2018",
+      "usedAt": "Kubion B.V.",
+      "keywords": []
+    },
+    {
+      "name": "LDAP",
+      "type": "System Administration",
+      "level": "Expert",
+      "lastUsed": "2018",
+      "usedAt": "Kubion B.V., Wija Koers Relatiemarketing",
+      "keywords": []
+    },
+    {
+      "name": "Diverse architecturen en patronen",
+      "type": "Methodologies",
+      "level": "Expert",
+      "lastUsed": "2018",
+      "usedAt": "Kubion B.V., Wija Koers Relatiemarketing",
+      "keywords": []
+    },
+    {
+      "name": "MVC (model - view - controller)",
+      "type": "Methodologies",
+      "level": "Expert",
+      "lastUsed": "2018",
+      "usedAt": "Kubion B.V.",
+      "keywords": []
+    },
+    {
+      "name": "Visual Basics",
+      "type": "Software Development",
+      "level": "Expert",
+      "lastUsed": "2007",
+      "usedAt": "Wija Koers Relatiemarketing, Ifective ICT Services bv",
+      "keywords": []
+    },
+    {
+      "name": "MySQL",
+      "type": "Database",
+      "level": "Expert",
+      "lastUsed": "2007",
+      "usedAt": "Wija Koers Relatiemarketing",
+      "keywords": []
+    },
+    {
+      "name": "PHP",
+      "type": "Software Development",
+      "level": "Expert",
+      "lastUsed": "2006",
+      "usedAt": "Wija Koers Relatiemarketing, Frans' Fotografie, De Kooi systeemhuis, Windesheim, Deltion College",
+      "keywords": []
+    },
+    {
+      "name": "Flash MX 2004",
+      "type": "Web Development",
+      "level": "Expert",
+      "lastUsed": "2006",
+      "usedAt": "Frans' Fotografie, Wija Koers Relatiemarketing",
+      "keywords": []
+    },
+    {
+      "name": "Java",
+      "type": "Software Development",
+      "level": "Expert",
+      "lastUsed": "2006",
+      "usedAt": "Windesheim, Deltion College",
+      "keywords": []
+    },
+    {
+      "name": "OO",
+      "type": "Methodologies",
+      "level": "Expert",
+      "lastUsed": "2003",
+      "usedAt": "Deltion College, De Kooi systeemhuis",
+      "keywords": []
+    },
+    {
+      "name": "CSS1 / CSS2",
+      "type": "Web Development",
+      "level": "Expert",
+      "lastUsed": "2003",
+      "usedAt": "Deltion College",
+      "keywords": []
+    },
+    {
+      "name": "Linux - Slackware",
+      "type": "Applications",
+      "level": "Basic",
+      "lastUsed": "1981",
+      "usedAt": "",
+      "keywords": []
+    },
+    {
+      "name": "Linux - SuSE",
+      "type": "Applications",
+      "level": "Basic",
+      "lastUsed": "1981",
+      "usedAt": "",
+      "keywords": []
+    },
+    {
+      "name": "Linux - Redhat",
+      "type": "Applications",
+      "level": "Basic",
+      "lastUsed": "1981",
+      "usedAt": "",
+      "keywords": []
+    },
+    {
+      "name": "Adobe Photoshop",
+      "type": "Applications",
+      "level": "Basic",
+      "lastUsed": "1981",
+      "usedAt": "",
+      "keywords": []
+    },
+    {
+      "name": "Macromedia Flash MX",
+      "type": "Applications",
+      "level": "Basic",
+      "lastUsed": "1981",
+      "usedAt": "",
+      "keywords": []
+    },
+    {
+      "name": "Microsoft Visio",
+      "type": "Applications",
+      "level": "Basic",
+      "lastUsed": "1981",
+      "usedAt": "",
+      "keywords": []
+    },
+    {
+      "name": "Microsoft Office (Word / Powerpoint / Excel / Outlook / Access)",
+      "type": "Applications",
+      "level": "Basic",
+      "lastUsed": "1981",
+      "usedAt": "",
+      "keywords": []
+    },
+    {
+      "name": "Mac OS",
+      "type": "Applications",
+      "level": "Basic",
+      "lastUsed": "1981",
+      "usedAt": "",
+      "keywords": []
+    },
+    {
+      "name": "Sprint Planning",
+      "type": "Agile",
+      "level": "Expert",
+      "lastUsed": "1981",
+      "usedAt": "",
+      "keywords": []
+    },
+    {
+      "name": "SCRUM",
+      "type": "Agile",
+      "level": "Expert",
+      "lastUsed": "1981",
+      "usedAt": "",
+      "keywords": []
+    },
+    {
+      "name": "User Story Mapping",
+      "type": "Agile",
+      "level": "Expert",
+      "lastUsed": "1981",
+      "usedAt": "",
+      "keywords": []
+    },
+    {
+      "name": "Stakeholder Management",
+      "type": "Product Management",
+      "level": "Expert",
+      "lastUsed": "1981",
+      "usedAt": "",
+      "keywords": []
+    },
+    {
+      "name": "Release Management",
+      "type": "Product Management",
+      "level": "Expert",
+      "lastUsed": "1981",
+      "usedAt": "",
+      "keywords": []
+    },
+    {
+      "name": "Team Leadership",
+      "type": "Product Management",
+      "level": "Expert",
+      "lastUsed": "1981",
+      "usedAt": "",
+      "keywords": []
+    },
+    {
+      "name": "Node.js",
+      "type": "Software Development",
+      "level": "Expert",
+      "lastUsed": "1981",
+      "usedAt": "",
+      "keywords": []
+    },
+    {
+      "name": "Back end development",
+      "type": "Software Development",
+      "level": "Expert",
+      "lastUsed": "1981",
+      "usedAt": "",
+      "keywords": []
+    },
+    {
+      "name": "Code Review",
+      "type": "Software Development",
+      "level": "Expert",
+      "lastUsed": "1981",
+      "usedAt": "",
+      "keywords": []
+    },
+    {
+      "name": "Mobile Applications",
+      "type": "Software Development",
+      "level": "Expert",
+      "lastUsed": "1981",
+      "usedAt": "",
+      "keywords": []
+    },
+    {
+      "name": "PostgreSQL",
+      "type": "Database",
+      "level": "Expert",
+      "lastUsed": "1981",
+      "usedAt": "",
+      "keywords": []
+    },
+    {
+      "name": "Data Architecture",
+      "type": "Database",
+      "level": "Expert",
+      "lastUsed": "1981",
+      "usedAt": "",
+      "keywords": []
+    },
+    {
+      "name": "ERD",
+      "type": "Database",
+      "level": "Expert",
+      "lastUsed": "1981",
+      "usedAt": "",
+      "keywords": []
+    },
+    {
+      "name": "ETL",
+      "type": "Database",
+      "level": "Expert",
+      "lastUsed": "1981",
+      "usedAt": "",
+      "keywords": []
+    },
+    {
+      "name": "Google Cloud",
+      "type": "Cloud",
+      "level": "Expert",
+      "lastUsed": "1981",
+      "usedAt": "",
+      "keywords": []
+    },
+    {
+      "name": "Apache",
+      "type": "System Administration",
+      "level": "Expert",
+      "lastUsed": "1981",
+      "usedAt": "",
+      "keywords": []
+    },
+    {
+      "name": "IIS",
+      "type": "System Administration",
+      "level": "Expert",
+      "lastUsed": "1981",
+      "usedAt": "",
+      "keywords": []
+    },
+    {
+      "name": "Lotus",
+      "type": "Software Development",
+      "level": "Basic",
+      "lastUsed": "2007",
+      "usedAt": "Wija Koers Relatiemarketing",
+      "keywords": [
+        "Lotus Script and Formula",
+        "Lotus (nsf)",
         "Lotus Domino",
         "Lotus Notes",
-        "Data Architecture",
-        "ERD",
-        "ETL",
-        "Lotus (nsf)"
-      ]
-    },
-    {
-      "name": "Cloud",
-      "level": "Expert",
-      "keywords": [
-        "Azure",
-        "Azure DevOps",
-        "Google Cloud"
-      ]
-    },
-    {
-      "name": "Agile",
-      "level": "Expert",
-      "keywords": [
-        "Sprint Planning",
-        "SCRUM",
-        "User Story Mapping"
-      ]
-    },
-    {
-      "name": "Product Management",
-      "level": "Expert",
-      "keywords": [
-        "Stakeholder Management",
-        "Release Management",
-        "Team Leadership"
-      ]
-    },
-    {
-      "name": "Web Development",
-      "level": "Expert",
-      "keywords": [
-        "HTML",
-        "CSS / SCSS / SASS",
-        "Javascript",
-        "Responsive Web Design",
-        "AJAX",
-        "SEO",
-        "Search Engine Ranking",
-        "Flash MX 2004"
-      ]
-    },
-    {
-      "name": "System Administration",
-      "level": "Expert",
-      "keywords": [
-        "Linux-server",
-        "Apache",
-        "IIS",
-        "DNS management",
-        "LDAP"
-      ]
-    },
-    {
-      "name": "Methodologies",
-      "level": "Expert",
-      "keywords": [
-        "OO",
-        "Diverse architecturen en patronen",
-        "MVC (model - view - controller)"
-      ]
-    },
-    {
-      "name": "Applications",
-      "level": "Expert",
-      "keywords": [
-        "Mac OS",
-        "Linux - Slackware",
-        "Linux - SuSE",
-        "Linux - Redhat",
-        "Adobe Photoshop",
-        "Macromedia Flash MX",
-        "Microsoft Visio",
-        "Lotus Smartsuite",
-        "Microsoft Office (Word / Powerpoint / Excel / Outlook / Access)"
+        "Lotus Smartsuite"
       ]
     }
   ],
@@ -534,7 +830,7 @@
   ],
   "meta": {
     "canonical": "https://raw.githubusercontent.com/mitchuhl/resume/refs/heads/main/resume.json",
-    "version": "v0.10.0",
-    "lastModified": "2026-10-04T09:56:00"
+    "version": "v0.11.0",
+    "lastModified": "2026-10-04T10:41:00"
   }
 }

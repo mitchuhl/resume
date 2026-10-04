@@ -86,7 +86,24 @@ Use `@/jsonresume/schema.json` as the source of truth for what fields and struct
 - Keep entries concise and keyword-oriented, matching the existing style of `/resume.json`.
 - In the `work` section, always order entries by `startDate` from newest to oldest.
 - In the `education` section, format the `institution` attribute as `{name}, {city}, {countryCode}`.
-- In the `education` section, always order entries by `startDate` from newest to oldest.
-  - If `startDate` is not present, assume it's old.
-  - If `endDate` is not present, assume it's new.
-  - If both are not present, assume it's old.
+ - In the `education` section, always order entries by `startDate` from newest to oldest.
+   - If `startDate` is not present, assume it's old.
+   - If `endDate` is not present, assume it's new.
+   - If both are not present, assume it's old.
+
+## Skills transformation
+
+Each keyword currently listed under `skills[].keywords[]` is treated as an individual skill. When restructuring `skills`, transform every keyword into its own object with the following shape:
+
+- `name` — the original keyword value
+- `type` — the former group name (e.g. `Database`, `Web Development`)
+- `level` — default to `Basic`
+- `lastUsed` — year string; try to find a year from `work` and `education` entries, otherwise default to `1981`
+- `usedAt` — comma-separated names of work companies or education schools where the skill appears; leave empty if unknown
+- `keywords` — keep empty for now
+
+Order the transformed `skills` array by `type` group first, then by `lastUsed` year descending within each group.
+
+If a skill was learned only in education and never used in work or projects, remove it from `skills`. Education courses already capture these details, so they do not need to be duplicated in `skills`.
+
+If multiple skills share a common root or brand (for example, Lotus-related entries), group them into one skill item with `name` set to the root name, `type` set to the most relevant category, and move each unique original skill name into the `keywords` array. Remove the individual entries after grouping.
