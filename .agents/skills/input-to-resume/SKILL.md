@@ -19,7 +19,7 @@ Read a user-provided file, detect resume-relevant information that is **not yet 
 
 For PDF input, extract text with the bundled `mutool.exe` using its path relative to the project root:
 
-- `.agents\skills\input-to-resume\tools\mutool.exe convert -F text -o temp\[filename].txt [input.pdf]`
+- `.agents\skills\input-to-resume\tools\mutool.exe convert -F text -o .\temp\[filename].txt [input.pdf]`
 
 Then parse the resulting TXT file as the resume source.
 
@@ -50,25 +50,29 @@ Use `@/jsonresume/schema.json` as the source of truth for what fields and struct
 1. Read `/resume.json` and extract existing data.
 2. Read the user-provided file and extract any resume-relevant data.
 3. Compare the extracted data against `/resume.json`.
-4. For each top-level section below, **in order**:
-   - `basics`
-   - `work`
-   - `volunteer`
-   - `education`
-   - `awards`
-   - `certificates`
-   - `publications`
-   - `skills`
-   - `languages`
-   - `interests`
-   - `references`
-   - `projects`
-   - `meta`
-5. For the current section, identify any **missing or incomplete** items from the input file.
-6. If missing/incomplete items exist, **show them to the user** and ask what they want to do for that section (for example: add all, add selected items only, skip, or update existing entries).
-7. Apply only the changes the user explicitly confirms for that section.
-8. After each confirmed change, **save the updated data back to `/resume.json`** while preserving the existing structure and formatting style.
-9. After all sections have been processed, **increase the second digit in the version number** in `/resume.json`.
+4. Process the sections **one at a time** in the order below. For each section:
+   - Identify any **missing or incomplete** items from the input file for **that section only**.
+   - If none exist, proceed directly to the next section.
+   - If missing/incomplete items exist, **show them to the user** and ask what they want to do for that section only (for example: add all, add selected items only, skip, or update existing entries).
+   - Wait for the user's explicit confirmation before continuing.
+   - Apply only the changes the user explicitly confirms for that section.
+   - **Save the updated data back to `/resume.json`** while preserving the existing structure and formatting style.
+   - Only then move on to the next section.
+   - Sections in order:
+     - `basics`
+     - `work`
+     - `volunteer`
+     - `education`
+     - `awards`
+     - `certificates`
+     - `publications`
+     - `skills`
+     - `languages`
+     - `interests`
+     - `references`
+     - `projects`
+     - `meta`
+5. After all sections have been processed, **increase the second digit in the version number** in `/resume.json`.
 
 ## Rules
 
@@ -80,3 +84,9 @@ Use `@/jsonresume/schema.json` as the source of truth for what fields and struct
 - Use ISO 8601 dates where applicable (e.g. `YYYY-MM` or `YYYY-MM-DD`).
 - After each confirmed addition, save the updated data back to `/resume.json`.
 - Keep entries concise and keyword-oriented, matching the existing style of `/resume.json`.
+- In the `work` section, always order entries by `startDate` from newest to oldest.
+- In the `education` section, format the `institution` attribute as `{name}, {city}, {countryCode}`.
+- In the `education` section, always order entries by `startDate` from newest to oldest.
+  - If `startDate` is not present, assume it's old.
+  - If `endDate` is not present, assume it's new.
+  - If both are not present, assume it's old.
