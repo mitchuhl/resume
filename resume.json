@@ -31,7 +31,6 @@
       "name": "Probust",
       "position": "Owner",
       "startDate": "2025-05",
-      "endDate": "present",
       "location": "Gelderland, Netherlands",
       "description": "company: one-man standard software development\nrole: owner, back-end/front-end, network management, SEO, data structures, reporting",
       "summary": "one-man company standard software, complete package delivery",
@@ -44,7 +43,6 @@
       "name": "KWEEKERS",
       "position": "Product Owner, Senior Developer",
       "startDate": "2024-04",
-      "endDate": "present",
       "location": "Oosterhout",
       "description": "company: low-code integration platform U-Turn\nrole: Product Owner, Senior Developer, connect applications without programming knowledge",
       "summary": "low-code integration platform U-Turn, connect applications without programming knowledge",
@@ -167,6 +165,86 @@
         "website troubleshooting",
         "manuals and product sheets"
       ]
+    },
+    {
+      "name": "Distributiecentrum Nieuwe Weme",
+      "position": "Order verzamelaar",
+      "startDate": "2001-06",
+      "endDate": "2001-08",
+      "location": "Heerenveen, Netherlands",
+      "description": "company: Distributiecentrum Nieuwe Weme\nrole: Order verzamelaar",
+      "summary": "order collector",
+      "highlights": []
+    },
+    {
+      "name": "Super de Boer",
+      "position": "KW medewerker",
+      "startDate": "2001-03",
+      "endDate": "2001-09",
+      "location": "Meppel, Netherlands",
+      "description": "company: Super de Boer\nrole: KW medewerker",
+      "summary": "promotion worker",
+      "highlights": []
+    },
+    {
+      "name": "Handelskwekerij Exeptio",
+      "position": "Hovenier",
+      "startDate": "1999-10",
+      "endDate": "2001-06",
+      "location": "Boyl, Netherlands",
+      "description": "company: Handelskwekerij Exeptio\nrole: Hovenier",
+      "summary": "gardener",
+      "highlights": []
+    },
+    {
+      "name": "Heida",
+      "position": "BOVAG controleur",
+      "startDate": "1999-06",
+      "endDate": "1999-08",
+      "location": "Wolvega, Netherlands",
+      "description": "company: Heida\nrole: BOVAG controleur",
+      "summary": "BOVAG inspector",
+      "highlights": []
+    },
+    {
+      "name": "Verspreidingsbureau Weststellingwerf",
+      "position": "Folderverspreider",
+      "startDate": "1999-01",
+      "endDate": "1999-11",
+      "location": "De Blesse, Netherlands",
+      "description": "company: Verspreidingsbureau Weststellingwerf\nrole: Folderverspreider",
+      "summary": "leaflet distribution",
+      "highlights": []
+    },
+    {
+      "name": "S.Donker",
+      "position": "Vakantiekracht leliekoppen",
+      "startDate": "1998-07",
+      "endDate": "1998-08",
+      "location": "Boyl, Netherlands",
+      "description": "company: S.Donker\nrole: Vakantiekracht leliekoppen",
+      "summary": "seasonal worker lily bulbs",
+      "highlights": []
+    },
+    {
+      "name": "Machandel",
+      "position": "Productiemedewerker",
+      "startDate": "1998",
+      "endDate": "1999",
+      "location": "Wolvega, Netherlands",
+      "description": "company: Machandel\nrole: Productiemedewerker",
+      "summary": "production worker",
+      "highlights": []
+    },
+    {
+      "name": "Frigem",
+      "position": "Gasmeterstand opnemer",
+      "startDate": "1997-12",
+      "endDate": "1999-12",
+      "location": "De Blesse, Netherlands",
+      "description": "company: Frigem\nrole: Gasmeterstand opnemer",
+      "summary": "gas meter reader",
+      "highlights": []
     }
   ],
   "volunteer": [
@@ -204,8 +282,8 @@
       "url": "https://www.windesheim.nl"
     },
     {
-      "institution": "Deltion College, NL",
-      "area": "Computer Science",
+      "institution": "Deltion College, Zwolle, NL",
+      "area": "Middenkaderfunctionaris kantoorautomatisering",
       "studyType": "MBO",
       "startDate": "",
       "endDate": "2003",
@@ -220,13 +298,27 @@
       "url": "https://www.deltion.nl"
     },
     {
-      "institution": "Bornego College, NL",
+      "institution": "Bornego College, Wolvega, NL",
       "area": "Mavo (D)",
       "studyType": "Mavo",
       "startDate": "",
       "endDate": "1999",
       "courses": [],
       "url": "https://www.bornego.nl"
+    },
+    {
+      "institution": "Atheneum, Linde College, Wolvega, NL",
+      "area": "Atheneum",
+      "studyType": "Atheneum",
+      "courses": [],
+      "url": ""
+    },
+    {
+      "institution": "Havo, Linde College, Wolvega, NL",
+      "area": "Havo",
+      "studyType": "Havo",
+      "courses": [],
+      "url": ""
     }
   ],
   "awards": [],
@@ -426,7 +518,7 @@
   ],
   "meta": {
     "canonical": "https://raw.githubusercontent.com/mitchuhl/resume/refs/heads/main/resume.json",
-    "version": "v0.5.0",
+    "version": "v0.6.0",
     "lastModified": "2026-10-02T19:40:58"
   }
 }
