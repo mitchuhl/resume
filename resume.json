@@ -83,7 +83,7 @@
       "position": "Software Engineer",
       "startDate": "2007-04",
       "endDate": "2018-10",
-      "location": "Netherlands",
+      "location": "Nieuwegein, Netherlands",
       "description": "company: Kubion B.V.\nrole: Software Engineer, web-based applications, ASP.NET, MSSQL, SSAS, JavaScript, Ajax, REST services",
       "summary": "web-based applications, ASP.NET, MSSQL, SSAS, JavaScript, Ajax, REST services",
       "highlights": []
@@ -260,7 +260,7 @@
   ],
   "education": [
     {
-      "institution": "Windesheim, NL",
+      "institution": "Christelijke Hogeschool Windesheim, Zwolle, NL",
       "area": "Computer Science",
       "studyType": "Bachelor of Science (BSc)",
       "startDate": "2003",
@@ -658,7 +658,9 @@
       "level": "Expert",
       "lastUsed": "1981",
       "usedAt": "",
-      "keywords": []
+      "keywords": [
+        "REST"
+      ]
     },
     {
       "name": "Code Review",
@@ -830,7 +832,7 @@
   ],
   "meta": {
     "canonical": "https://raw.githubusercontent.com/mitchuhl/resume/refs/heads/main/resume.json",
-    "version": "v0.11.0",
+    "version": "v0.12.0",
     "lastModified": "2026-10-04T10:41:00"
   }
 }
