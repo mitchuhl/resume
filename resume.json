@@ -86,7 +86,10 @@
       "location": "Nieuwegein, Netherlands",
       "description": "company: Kubion B.V.\nrole: Software Engineer, web-based applications, ASP.NET, MSSQL, SSAS, JavaScript, Ajax, REST services",
       "summary": "web-based applications, ASP.NET, MSSQL, SSAS, JavaScript, Ajax, REST services",
-      "highlights": []
+      "highlights": [
+        "normalization and valuation application",
+        "management application for VvE's"
+      ]
     },
     {
       "name": "Wija Koers Relatiemarketing",
@@ -742,7 +745,7 @@
   ],
   "meta": {
     "canonical": "https://raw.githubusercontent.com/mitchuhl/resume/refs/heads/main/resume.json",
-    "version": "v0.19.0",
+    "version": "v0.20.0",
     "lastModified": "2026-10-06T19:01:00"
   }
 }
