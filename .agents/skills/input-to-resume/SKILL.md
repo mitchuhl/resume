@@ -93,14 +93,12 @@ Use `@/jsonresume/schema.json` as the source of truth for what fields and struct
 
 ## Skills transformation
 
-Each keyword currently listed under `skills[].keywords[]` is treated as an individual skill. When restructuring `skills`, transform every keyword into its own object with the following shape:
-
-- `name` — the original keyword value
-- `type` — the former group name (e.g. `Database`, `Web Development`)
-- `level` — default to `Basic`
-- `lastUsed` — year string; try to find a year from `work` and `education` entries, otherwise default to `1981`
+- `name`
+- `type` — the group name (e.g. `Database`, `Web Development`)
+- `level` — default: `Basic`
+- `lastUsed` — year string; try to find a year from `work` and `education` entries, default: `1981`
 - `usedAt` — comma-separated names of work companies or education schools where the skill appears; leave empty if unknown
-- `keywords` — keep empty for now
+- `keywords`
 
 Order the transformed `skills` array by `type` group first, then by `lastUsed` year descending within each group.
 

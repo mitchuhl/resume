@@ -365,36 +365,19 @@
       ]
     },
     {
-      "name": "HTML",
+      "name": "Front end Development",
       "type": "Web Development",
       "level": "Expert",
       "lastUsed": "2025",
-      "usedAt": "Probust, Kubion B.V.",
-      "keywords": []
-    },
-    {
-      "name": "CSS / SCSS / SASS",
-      "type": "Web Development",
-      "level": "Expert",
-      "lastUsed": "2025",
-      "usedAt": "Probust, Kubion B.V.",
-      "keywords": []
-    },
-    {
-      "name": "Javascript",
-      "type": "Web Development",
-      "level": "Expert",
-      "lastUsed": "2025",
-      "usedAt": "Probust, Kubion B.V.",
-      "keywords": []
-    },
-    {
-      "name": "Responsive Web Design",
-      "type": "Web Development",
-      "level": "Expert",
-      "lastUsed": "2025",
-      "usedAt": "Probust, Kubion B.V.",
-      "keywords": []
+      "usedAt": "Probust, Kubion B.V., Wija Koers Relatiemarketing",
+      "keywords": [
+        "HTML",
+        "CSS / SCSS / SASS",
+        "Javascript",
+        "Responsive Web Design",
+        "AJAX",
+        "CSS1 / CSS2"
+      ]
     },
     {
       "name": "Azure",
@@ -442,14 +425,6 @@
       "level": "Expert",
       "lastUsed": "2018",
       "usedAt": "Kubion B.V., Wija Koers Relatiemarketing, Windesheim, Deltion College, De Kooi systeemhuis",
-      "keywords": []
-    },
-    {
-      "name": "AJAX",
-      "type": "Web Development",
-      "level": "Expert",
-      "lastUsed": "2018",
-      "usedAt": "Kubion B.V.",
       "keywords": []
     },
     {
@@ -522,14 +497,6 @@
       "level": "Expert",
       "lastUsed": "2003",
       "usedAt": "Deltion College, De Kooi systeemhuis",
-      "keywords": []
-    },
-    {
-      "name": "CSS1 / CSS2",
-      "type": "Web Development",
-      "level": "Expert",
-      "lastUsed": "2003",
-      "usedAt": "Deltion College",
       "keywords": []
     },
     {
@@ -832,7 +799,7 @@
   ],
   "meta": {
     "canonical": "https://raw.githubusercontent.com/mitchuhl/resume/refs/heads/main/resume.json",
-    "version": "v0.12.0",
-    "lastModified": "2026-10-04T10:41:00"
+    "version": "v0.13.0",
+    "lastModified": "2026-10-06T17:56:00"
   }
 }
