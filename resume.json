@@ -32,9 +32,19 @@
       "position": "Owner",
       "startDate": "2025-05",
       "location": "Gelderland, Netherlands",
-      "description": "company: one-man standard software development\nrole: owner, back-end/front-end, network management, SEO, data structures, reporting",
-      "summary": "one-man company standard software, complete package delivery",
+      "description": "company: Probust, one-man standard software development\nrole: owner, architect, full-stack development, ASP.NET, Firestore, Google Cloud, CI/CD, network management, SEO, data structures, reporting",
+      "summary": "Probust CMS platform, AI-powered website generation from photo, multi-tenant SaaS for entrepreneurs to big companies, complete Business Platform delivery",
       "highlights": [
+        "AI site generation from single photo",
+        "multi-tenant SaaS CMS architecture",
+        "ASP.NET back-end and front-end",
+        "Firestore NoSQL database",
+        "Google Cloud Run hosting",
+        "GitHub Actions CI/CD",
+        "webshop with payments and delivery",
+        "catalog, reviews, contact forms",
+        "social media sharing",
+        "scheduled tasks",
         "low overhead costs",
         "complete package delivery"
       ]
@@ -60,12 +70,15 @@
       "endDate": "2024-04",
       "location": "Utrecht, Netherlands",
       "description": "company: integration between IRIS and ERP systems\nrole: Product Owner, develop IRIS suite components",
-      "summary": "integration between IRIS and ERP systems, IRIS suite components",
+      "summary": "integration between IRIS and ERP systems, IRIS suite components, ERP integration",
       "highlights": [
         "client application for service workers",
         "tenant portal and intranet",
         "back-end, integration layer",
-        "mailing, telephony, document synchronization, reporting"
+        "image processor",
+        "IRIS back-end",
+        "mailing, telephony, document synchronization, reporting",
+        "ERP integration"
       ]
     },
     {
@@ -74,9 +87,18 @@
       "startDate": "2018-10",
       "endDate": "2021-07",
       "location": "Netherlands",
-      "description": "company: Kubion B.V.\nrole: Technical Architect",
-      "summary": "",
-      "highlights": []
+      "description": "company: Kubion B.V.\nrole: Technical Architect, KIM (Kubion Integratie Module), connect KCC (customer service) and tenant portals to ERP, real-time and batch data synchronization, stakeholder/team bridging, mentor",
+      "summary": "KIM (Kubion Integratie Module), connect KCC (customer service) and tenant portals to ERP, data sync (real-time, incremental, pub-sub), bridge product owner/stakeholders/team, mentor colleagues and trainees",
+      "highlights": [
+        "KIM (Kubion Integratie Module)",
+        "KCC (customer service)",
+        "ERP integration",
+        "real-time and batch data synchronization",
+        "pub-sub data synchronization",
+        "stakeholder/team bridging",
+        "mentor colleagues and trainees",
+        "ASP.NET, MSSQL, SSAS, JavaScript, Ajax, REST services"
+      ]
     },
     {
       "name": "Kubion B.V.",
@@ -85,10 +107,16 @@
       "endDate": "2018-10",
       "location": "Nieuwegein, Netherlands",
       "description": "company: Kubion B.V.\nrole: Software Engineer, web-based applications, ASP.NET, MSSQL, SSAS, JavaScript, Ajax, REST services",
-      "summary": "web-based applications, ASP.NET, MSSQL, SSAS, JavaScript, Ajax, REST services",
+      "summary": "applications for Dutch housing corporations, IRIS suite, tenant portal, ETL tools, SSIS support, customer implementations, web-based applications, ASP.NET, MSSQL, SSAS, JavaScript, Ajax, REST services",
       "highlights": [
         "normalization and valuation application",
-        "management application for VvE's"
+        "management application for VvE's",
+        "Dutch housing corporations",
+        "IRIS client application",
+        "ETL tools",
+        "SSIS support",
+        "first tenant portal front-end",
+        "customer implementations"
       ]
     },
     {
@@ -98,8 +126,15 @@
       "endDate": "2007-04",
       "location": "Hoogersmilde, Netherlands",
       "description": "company: Wija Koers Relatiemarketing\nrole: System Administrator, server and workstation management, domain name registration, email management, DNS, application installation, coordinate programmers, system and database design, search engine product development, Lotus web applications",
-      "summary": "server and workstation management, domain name registration, email management, DNS, application installation",
-      "highlights": []
+      "summary": "server and workstation management, domain name registration, email management, DNS, Windows/Linux server management, visitor statistics, module development, website development",
+      "highlights": [
+        "Windows and Linux server management",
+        "visitor statistics",
+        "module development",
+        "website development",
+        "system and database design",
+        "search engine product development"
+      ]
     },
     {
       "name": "Ifective ICT Services bv",
@@ -107,11 +142,13 @@
       "startDate": "2005-11",
       "endDate": "2006-04",
       "location": "'t Harde, NL",
-      "description": "company: custom software development\nrole: internship, create vb.net calendar component",
+      "description": "company: custom software development\nrole: internship, create vb.net calendar component, plancontrol with calendar functionality comparable to Microsoft Outlook, implemented in online relationship management system",
       "summary": "create vb.net calendar component",
       "highlights": [
         "graduation",
-        "production ready .net rendered control"
+        "production ready .net rendered control",
+        "calendar control like Microsoft Outlook",
+        "online relationship management system"
       ]
     },
     {
@@ -151,7 +188,12 @@
       "description": "company: Wija Koers Relatiemarketing\nrole: Assistant Programmer, develop search engine product, registration software, research reports, research application, client applications, time registration system",
       "summary": "develop search engine product, client applications, time registration system",
       "highlights": [
-        "search engine product became one of best sold products in 2006"
+        "search engine product became one of best sold products in 2006",
+        "registration software",
+        "research reports",
+        "research application",
+        "client applications",
+        "time registration system"
       ]
     },
     {
@@ -745,7 +787,7 @@
   ],
   "meta": {
     "canonical": "https://raw.githubusercontent.com/mitchuhl/resume/refs/heads/main/resume.json",
-    "version": "v0.20.0",
+    "version": "v0.22.0",
     "lastModified": "2026-10-06T19:01:00"
   }
 }
