@@ -7,9 +7,9 @@ public static class ResumeSchemaValidator
 {
     public static EvaluationResults Validate(JsonElement instance, string schemaPath)
     {
-        var schema = JsonSchema.FromFile(Path.GetFullPath(schemaPath));
+        JsonSchema schema = JsonSchema.FromFile(Path.GetFullPath(schemaPath));
 
-        var options = new EvaluationOptions
+        EvaluationOptions options = new EvaluationOptions
         {
             RequireFormatValidation = true,
             OutputFormat = OutputFormat.List
@@ -20,20 +20,20 @@ public static class ResumeSchemaValidator
 
     public static IEnumerable<string> CollectErrors(EvaluationResults results)
     {
-        foreach (var error in results.Errors ?? [])
+        foreach (KeyValuePair<string, string> error in results.Errors ?? [])
         {
-            var location = results.InstanceLocation.ToString();
+            string location = results.InstanceLocation.ToString();
 
-            var message = $"{error.Key}: {error.Value}";
+            string message = $"{error.Key}: {error.Value}";
 
             yield return string.IsNullOrEmpty(location)
                 ? message
                 : $"{location}: {message}";
         }
 
-        foreach (var detail in results.Details ?? [])
+        foreach (EvaluationResults detail in results.Details ?? [])
         {
-            foreach (var nested in CollectErrors(detail))
+            foreach (string nested in CollectErrors(detail))
             {
                 yield return nested;
             }

@@ -1,4 +1,5 @@
 ﻿using System.Text.Json;
+using Json.Schema;
 using QuestPDF.Fluent;
 using QuestPDF.Infrastructure;
 using resume_generator;
@@ -6,7 +7,7 @@ using resume_generator.Models;
 using resume_generator.Rendering;
 using resume_generator.Validation;
 
-var options = CliOptions.Parse(args);
+CliOptions options = CliOptions.Parse(args);
 
 if (options.ErrorMessage is not null)
 {
@@ -28,13 +29,13 @@ try
     {
         Console.Error.WriteLine($"Input file not found: {options.InputPath}");
 
-        var available = Directory.GetFiles(".", "resume-instance*.json");
+        string[] available = Directory.GetFiles(".", "resume-instance*.json");
 
         if (available.Length > 0)
         {
             Console.Error.WriteLine("Available resume instances:");
 
-            foreach (var file in available)
+            foreach (string file in available)
             {
                 Console.Error.WriteLine($"  {file}");
             }
@@ -49,15 +50,15 @@ try
         return 2;
     }
 
-    using var document = JsonDocument.Parse(File.ReadAllText(options.InputPath));
+    using JsonDocument document = JsonDocument.Parse(File.ReadAllText(options.InputPath));
 
-    var validation = ResumeSchemaValidator.Validate(document.RootElement, options.SchemaPath);
+    EvaluationResults validation = ResumeSchemaValidator.Validate(document.RootElement, options.SchemaPath);
 
     if (!validation.IsValid)
     {
         Console.Error.WriteLine($"Schema validation failed for '{options.InputPath}' against '{options.SchemaPath}':");
 
-        foreach (var error in ResumeSchemaValidator.CollectErrors(validation))
+        foreach (string error in ResumeSchemaValidator.CollectErrors(validation))
         {
             Console.Error.WriteLine($"  {error}");
         }
@@ -67,14 +68,14 @@ try
 
     Console.WriteLine($"'{options.InputPath}' is valid according to '{options.SchemaPath}' (additionalProperties: true)");
 
-    var resume = document.RootElement.Deserialize<Resume>()
+    Resume? resume = document.RootElement.Deserialize<Resume>()
         ?? throw new InvalidOperationException($"'{options.InputPath}' could not be parsed as a resume.");
 
     QuestPDF.Settings.License = LicenseType.Community;
 
-    var outputPath = options.ResolveOutputPath();
+    string outputPath = options.ResolveOutputPath();
 
-    var pdfDocument = new ResumePdfDocument(resume);
+    ResumePdfDocument pdfDocument = new ResumePdfDocument(resume);
     pdfDocument.GeneratePdf(outputPath);
 
     Console.WriteLine($"PDF generated: {outputPath}");

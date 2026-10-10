@@ -28,10 +28,10 @@ public sealed class ResumePdfDocument : IDocument
 
     public DocumentMetadata GetMetadata()
     {
-        var basics = _resume.Basics;
-        var name = string.IsNullOrWhiteSpace(basics?.Name) ? "Resume" : basics!.Name!;
+        Basics? basics = _resume.Basics;
+        string name = string.IsNullOrWhiteSpace(basics?.Name) ? "Resume" : basics!.Name!;
 
-        var title = string.IsNullOrWhiteSpace(basics?.Label)
+        string title = string.IsNullOrWhiteSpace(basics?.Label)
             ? name
             : $"{name} - {basics!.Label}";
 
@@ -60,7 +60,7 @@ public sealed class ResumePdfDocument : IDocument
 
     private void ComposeHeader(IContainer container)
     {
-        var basics = _resume.Basics;
+        Basics? basics = _resume.Basics;
 
         container.Column(column =>
         {
@@ -86,7 +86,7 @@ public sealed class ResumePdfDocument : IDocument
 
             column.Item().Element(ComposeContactLine);
 
-            var personalDetails = ComposePersonalDetails();
+            List<(string Label, string Value)> personalDetails = ComposePersonalDetails();
 
             if (personalDetails.Count > 0)
             {
@@ -101,8 +101,8 @@ public sealed class ResumePdfDocument : IDocument
 
     private void ComposeContactLine(IContainer container)
     {
-        var basics = _resume.Basics;
-        var segments = new List<(string Display, string? Url)>();
+        Basics? basics = _resume.Basics;
+        List<(string Display, string? Url)> segments = new List<(string Display, string? Url)>();
 
         if (!string.IsNullOrWhiteSpace(basics?.Email))
         {
@@ -119,21 +119,21 @@ public sealed class ResumePdfDocument : IDocument
             segments.Add((basics!.Url!, basics!.Url));
         }
 
-        var location = ComposeLocationText();
+        string location = ComposeLocationText();
 
         if (location.Length > 0)
         {
             segments.Add((location, null));
         }
 
-        foreach (var profile in basics?.Profiles ?? [])
+        foreach (Profile profile in basics?.Profiles ?? [])
         {
             if (string.IsNullOrWhiteSpace(profile.Network) && string.IsNullOrWhiteSpace(profile.Username))
             {
                 continue;
             }
 
-            var display = profile.Network is null
+            string display = profile.Network is null
                 ? profile.Username!
                 : profile.Username is null
                     ? profile.Network
@@ -151,7 +151,7 @@ public sealed class ResumePdfDocument : IDocument
         {
             text.DefaultTextStyle(style => style.FontSize(9.5f).FontColor(Muted));
 
-            for (var i = 0; i < segments.Count; i++)
+            for (int i = 0; i < segments.Count; i++)
             {
                 if (i > 0)
                 {
@@ -172,21 +172,21 @@ public sealed class ResumePdfDocument : IDocument
 
     private string ComposeLocationText()
     {
-        var location = _resume.Basics?.Location;
+        Location? location = _resume.Basics?.Location;
 
         if (location is null)
         {
             return string.Empty;
         }
 
-        var parts = new List<string>();
+        List<string> parts = new List<string>();
 
         if (!string.IsNullOrWhiteSpace(location.Address))
         {
             parts.Add(location.Address);
         }
 
-        var postalCity = $"{location.PostalCode} {location.City}".Trim();
+        string postalCity = $"{location.PostalCode} {location.City}".Trim();
 
         if (postalCity.Length > 0)
         {
@@ -208,15 +208,15 @@ public sealed class ResumePdfDocument : IDocument
 
     private List<(string Label, string Value)> ComposePersonalDetails()
     {
-        var details = new List<(string Label, string Value)>();
+        List<(string Label, string Value)> details = new List<(string Label, string Value)>();
 
-        foreach (var additionalProperty in _resume.Basics?.AdditionalProperties ?? new Dictionary<string, JsonElement>())
+        foreach (KeyValuePair<string, JsonElement> additionalProperty in _resume.Basics?.AdditionalProperties ?? new Dictionary<string, JsonElement>())
         {
-            var label = PersonalDetailLabels.TryGetValue(additionalProperty.Key, out var mapped)
+            string label = PersonalDetailLabels.TryGetValue(additionalProperty.Key, out string? mapped)
                 ? mapped
                 : Humanize(additionalProperty.Key);
 
-            var value = FormatExtensionValue(additionalProperty.Key, additionalProperty.Value);
+            string value = FormatExtensionValue(additionalProperty.Key, additionalProperty.Value);
 
             if (value.Length > 0)
             {
@@ -232,7 +232,7 @@ public sealed class ResumePdfDocument : IDocument
         switch (value.ValueKind)
         {
             case JsonValueKind.String:
-                var text = value.GetString() ?? string.Empty;
+                string text = value.GetString() ?? string.Empty;
                 return key.Equals("birthDate", StringComparison.OrdinalIgnoreCase)
                     ? PartialDateFormatter.Format(text)
                     : text;
@@ -245,9 +245,9 @@ public sealed class ResumePdfDocument : IDocument
 
     private static string Humanize(string key)
     {
-        var builder = new System.Text.StringBuilder();
+        System.Text.StringBuilder builder = new System.Text.StringBuilder();
 
-        foreach (var character in key)
+        foreach (char character in key)
         {
             if (builder.Length > 0 && char.IsUpper(character))
             {
@@ -283,7 +283,7 @@ public sealed class ResumePdfDocument : IDocument
 
     private void ComposeProfile(ColumnDescriptor column)
     {
-        var summary = _resume.Basics?.Summary;
+        string? summary = _resume.Basics?.Summary;
 
         if (string.IsNullOrWhiteSpace(summary))
         {
@@ -298,7 +298,7 @@ public sealed class ResumePdfDocument : IDocument
 
     private void ComposeWork(ColumnDescriptor column)
     {
-        var items = _resume.Work;
+        List<WorkExperience>? items = _resume.Work;
 
         if (items is null || items.Count == 0)
         {
@@ -307,7 +307,7 @@ public sealed class ResumePdfDocument : IDocument
 
         AddSection(column, "Werkervaring", section =>
         {
-            foreach (var work in items)
+            foreach (WorkExperience work in items)
             {
                 section.Item().PaddingBottom(9).Column(item =>
                 {
@@ -326,7 +326,7 @@ public sealed class ResumePdfDocument : IDocument
                             }
                         });
 
-                        var dates = PartialDateFormatter.FormatRange(work.StartDate, work.EndDate);
+                        string dates = PartialDateFormatter.FormatRange(work.StartDate, work.EndDate);
 
                         if (dates.Length > 0)
                         {
@@ -357,7 +357,7 @@ public sealed class ResumePdfDocument : IDocument
 
     private void ComposeVolunteer(ColumnDescriptor column)
     {
-        var items = _resume.Volunteer;
+        List<VolunteerExperience>? items = _resume.Volunteer;
 
         if (items is null || items.Count == 0)
         {
@@ -366,7 +366,7 @@ public sealed class ResumePdfDocument : IDocument
 
         AddSection(column, "Vrijwilligerswerk", section =>
         {
-            foreach (var volunteer in items)
+            foreach (VolunteerExperience volunteer in items)
             {
                 section.Item().PaddingBottom(9).Column(item =>
                 {
@@ -385,7 +385,7 @@ public sealed class ResumePdfDocument : IDocument
                             }
                         });
 
-                        var dates = PartialDateFormatter.FormatRange(volunteer.StartDate, volunteer.EndDate);
+                        string dates = PartialDateFormatter.FormatRange(volunteer.StartDate, volunteer.EndDate);
 
                         if (dates.Length > 0)
                         {
@@ -411,7 +411,7 @@ public sealed class ResumePdfDocument : IDocument
 
     private void ComposeEducation(ColumnDescriptor column)
     {
-        var items = _resume.Education;
+        List<Education>? items = _resume.Education;
 
         if (items is null || items.Count == 0)
         {
@@ -420,7 +420,7 @@ public sealed class ResumePdfDocument : IDocument
 
         AddSection(column, "Opleiding", section =>
         {
-            foreach (var education in items)
+            foreach (Education education in items)
             {
                 section.Item().PaddingBottom(9).Column(item =>
                 {
@@ -433,7 +433,7 @@ public sealed class ResumePdfDocument : IDocument
                                 header.Item().Text(education.Institution).FontSize(11).Bold();
                             }
 
-                            var studyType = education.StudyType;
+                            string? studyType = education.StudyType;
 
                             if (!string.IsNullOrWhiteSpace(education.Area))
                             {
@@ -448,7 +448,7 @@ public sealed class ResumePdfDocument : IDocument
                             }
                         });
 
-                        var dates = PartialDateFormatter.FormatRange(education.StartDate, education.EndDate);
+                        string dates = PartialDateFormatter.FormatRange(education.StartDate, education.EndDate);
 
                         if (dates.Length > 0)
                         {
@@ -461,7 +461,7 @@ public sealed class ResumePdfDocument : IDocument
                         item.Item().PaddingBottom(2).Text($"Gemiddeld cijfer: {education.Score}").FontSize(9).FontColor(Muted);
                     }
 
-                    var courses = education.Courses?.Where(course => !string.IsNullOrWhiteSpace(course)).ToList();
+                    List<string>? courses = education.Courses?.Where(course => !string.IsNullOrWhiteSpace(course)).ToList();
 
                     if (courses is { Count: > 0 })
                     {
@@ -474,7 +474,7 @@ public sealed class ResumePdfDocument : IDocument
 
     private void ComposeSkills(ColumnDescriptor column)
     {
-        var items = _resume.Skills?.Where(skill => !string.IsNullOrWhiteSpace(skill.Name) || (skill.Keywords?.Count ?? 0) > 0).ToList();
+        List<Skill>? items = _resume.Skills?.Where(skill => !string.IsNullOrWhiteSpace(skill.Name) || (skill.Keywords?.Count ?? 0) > 0).ToList();
 
         if (items is null || items.Count == 0)
         {
@@ -491,9 +491,9 @@ public sealed class ResumePdfDocument : IDocument
                     columns.RelativeColumn();
                 });
 
-                foreach (var skill in items)
+                foreach (Skill skill in items)
                 {
-                    var name = skill.Name ?? string.Empty;
+                    string name = skill.Name ?? string.Empty;
 
                     if (!string.IsNullOrWhiteSpace(skill.Level))
                     {
@@ -502,7 +502,7 @@ public sealed class ResumePdfDocument : IDocument
 
                     table.Cell().PaddingVertical(2).Text(name).Bold().FontSize(9.5f);
 
-                    var keywords = skill.Keywords?.Where(keyword => !string.IsNullOrWhiteSpace(keyword)).ToList() ?? [];
+                    List<string> keywords = skill.Keywords?.Where(keyword => !string.IsNullOrWhiteSpace(keyword)).ToList() ?? [];
 
                     table.Cell().PaddingVertical(2).Text(string.Join(", ", keywords)).FontSize(9.5f);
                 }
@@ -512,7 +512,7 @@ public sealed class ResumePdfDocument : IDocument
 
     private void ComposeProjects(ColumnDescriptor column)
     {
-        var items = _resume.Projects;
+        List<Project>? items = _resume.Projects;
 
         if (items is null || items.Count == 0)
         {
@@ -521,7 +521,7 @@ public sealed class ResumePdfDocument : IDocument
 
         AddSection(column, "Projecten", section =>
         {
-            foreach (var project in items)
+            foreach (Project project in items)
             {
                 section.Item().PaddingBottom(9).Column(item =>
                 {
@@ -534,9 +534,9 @@ public sealed class ResumePdfDocument : IDocument
                                 header.Item().Text(project.Name).FontSize(11).Bold();
                             }
 
-                            var roles = project.Roles?.Where(role => !string.IsNullOrWhiteSpace(role)).ToList() ?? [];
+                            List<string> roles = project.Roles?.Where(role => !string.IsNullOrWhiteSpace(role)).ToList() ?? [];
 
-                            var subTitleParts = new List<string>();
+                            List<string> subTitleParts = new List<string>();
 
                             if (!string.IsNullOrWhiteSpace(project.Type))
                             {
@@ -559,7 +559,7 @@ public sealed class ResumePdfDocument : IDocument
                             }
                         });
 
-                        var dates = PartialDateFormatter.FormatRange(project.StartDate, project.EndDate);
+                        string dates = PartialDateFormatter.FormatRange(project.StartDate, project.EndDate);
 
                         if (dates.Length > 0)
                         {
@@ -574,7 +574,7 @@ public sealed class ResumePdfDocument : IDocument
 
                     ComposeHighlights(item, project.Highlights);
 
-                    var keywords = project.Keywords?.Where(keyword => !string.IsNullOrWhiteSpace(keyword)).ToList() ?? [];
+                    List<string> keywords = project.Keywords?.Where(keyword => !string.IsNullOrWhiteSpace(keyword)).ToList() ?? [];
 
                     if (keywords.Count > 0)
                     {
@@ -587,7 +587,7 @@ public sealed class ResumePdfDocument : IDocument
 
     private void ComposeCertificates(ColumnDescriptor column)
     {
-        var items = _resume.Certificates;
+        List<Certificate>? items = _resume.Certificates;
 
         if (items is null || items.Count == 0)
         {
@@ -596,7 +596,7 @@ public sealed class ResumePdfDocument : IDocument
 
         AddSection(column, "Certificaten", section =>
         {
-            foreach (var certificate in items)
+            foreach (Certificate certificate in items)
             {
                 section.Item().PaddingBottom(6).Row(row =>
                 {
@@ -613,7 +613,7 @@ public sealed class ResumePdfDocument : IDocument
                         }
                     });
 
-                    var date = PartialDateFormatter.Format(certificate.Date);
+                    string date = PartialDateFormatter.Format(certificate.Date);
 
                     if (date.Length > 0)
                     {
@@ -626,7 +626,7 @@ public sealed class ResumePdfDocument : IDocument
 
     private void ComposeLanguages(ColumnDescriptor column)
     {
-        var items = _resume.Languages;
+        List<SpokenLanguage>? items = _resume.Languages;
 
         if (items is null || items.Count == 0)
         {
@@ -643,7 +643,7 @@ public sealed class ResumePdfDocument : IDocument
                     columns.RelativeColumn();
                 });
 
-                foreach (var language in items)
+                foreach (SpokenLanguage language in items)
                 {
                     table.Cell().PaddingVertical(2).Text(language.Language ?? string.Empty).Bold().FontSize(9.5f);
                     table.Cell().PaddingVertical(2).Text(language.Fluency ?? string.Empty).FontSize(9.5f);
@@ -654,7 +654,7 @@ public sealed class ResumePdfDocument : IDocument
 
     private void ComposeInterests(ColumnDescriptor column)
     {
-        var items = _resume.Interests;
+        List<Interest>? items = _resume.Interests;
 
         if (items is null || items.Count == 0)
         {
@@ -663,11 +663,11 @@ public sealed class ResumePdfDocument : IDocument
 
         AddSection(column, "Interesses", section =>
         {
-            foreach (var interest in items)
+            foreach (Interest interest in items)
             {
-                var keywords = interest.Keywords?.Where(keyword => !string.IsNullOrWhiteSpace(keyword)).ToList() ?? [];
+                List<string> keywords = interest.Keywords?.Where(keyword => !string.IsNullOrWhiteSpace(keyword)).ToList() ?? [];
 
-                var text = keywords.Count > 0
+                string text = keywords.Count > 0
                     ? $"{interest.Name}: {string.Join(", ", keywords)}"
                     : interest.Name ?? string.Empty;
 
@@ -683,7 +683,7 @@ public sealed class ResumePdfDocument : IDocument
 
     private void ComposeAwards(ColumnDescriptor column)
     {
-        var items = _resume.Awards;
+        List<Award>? items = _resume.Awards;
 
         if (items is null || items.Count == 0)
         {
@@ -692,7 +692,7 @@ public sealed class ResumePdfDocument : IDocument
 
         AddSection(column, "Prijzen", section =>
         {
-            foreach (var award in items)
+            foreach (Award award in items)
             {
                 section.Item().PaddingBottom(7).Column(item =>
                 {
@@ -700,7 +700,7 @@ public sealed class ResumePdfDocument : IDocument
                     {
                         row.RelativeItem().Text(award.Title ?? string.Empty).Bold();
 
-                        var date = PartialDateFormatter.Format(award.Date);
+                        string date = PartialDateFormatter.Format(award.Date);
 
                         if (date.Length > 0)
                         {
@@ -724,7 +724,7 @@ public sealed class ResumePdfDocument : IDocument
 
     private void ComposePublications(ColumnDescriptor column)
     {
-        var items = _resume.Publications;
+        List<Publication>? items = _resume.Publications;
 
         if (items is null || items.Count == 0)
         {
@@ -733,7 +733,7 @@ public sealed class ResumePdfDocument : IDocument
 
         AddSection(column, "Publicaties", section =>
         {
-            foreach (var publication in items)
+            foreach (Publication publication in items)
             {
                 section.Item().PaddingBottom(7).Column(item =>
                 {
@@ -741,7 +741,7 @@ public sealed class ResumePdfDocument : IDocument
                     {
                         row.RelativeItem().Text(publication.Name ?? string.Empty).Bold();
 
-                        var date = PartialDateFormatter.Format(publication.ReleaseDate);
+                        string date = PartialDateFormatter.Format(publication.ReleaseDate);
 
                         if (date.Length > 0)
                         {
@@ -765,7 +765,7 @@ public sealed class ResumePdfDocument : IDocument
 
     private void ComposeReferences(ColumnDescriptor column)
     {
-        var items = _resume.References;
+        List<Reference>? items = _resume.References;
 
         if (items is null || items.Count == 0)
         {
@@ -774,7 +774,7 @@ public sealed class ResumePdfDocument : IDocument
 
         AddSection(column, "Referenties", section =>
         {
-            foreach (var reference in items)
+            foreach (Reference reference in items)
             {
                 section.Item().PaddingBottom(7).Column(item =>
                 {
@@ -794,9 +794,9 @@ public sealed class ResumePdfDocument : IDocument
 
     private static void ComposeHighlights(ColumnDescriptor item, List<string>? highlights)
     {
-        var validHighlights = highlights?.Where(highlight => !string.IsNullOrWhiteSpace(highlight)).ToList() ?? [];
+        List<string> validHighlights = highlights?.Where(highlight => !string.IsNullOrWhiteSpace(highlight)).ToList() ?? [];
 
-        foreach (var highlight in validHighlights)
+        foreach (string highlight in validHighlights)
         {
             item.Item().PaddingLeft(12).PaddingBottom(1).Row(row =>
             {
@@ -824,7 +824,7 @@ public sealed class ResumePdfDocument : IDocument
 
     private void ComposeFooter(IContainer container)
     {
-        var name = _resume.Basics?.Name ?? string.Empty;
+        string name = _resume.Basics?.Name ?? string.Empty;
 
         container.AlignCenter().Text(text =>
         {

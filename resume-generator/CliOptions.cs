@@ -19,8 +19,8 @@ public sealed class CliOptions
             return Path.GetFullPath(OutputPath);
         }
 
-        var inputFullPath = Path.GetFullPath(InputPath);
-        var directory = Path.GetDirectoryName(inputFullPath) ?? ".";
+        string inputFullPath = Path.GetFullPath(InputPath);
+        string directory = Path.GetDirectoryName(inputFullPath) ?? ".";
 
         return Path.Combine(directory, Path.GetFileNameWithoutExtension(inputFullPath) + ".pdf");
     }
@@ -30,14 +30,14 @@ public sealed class CliOptions
         string? inputPath = null;
         string? schemaPath = null;
         string? outputPath = null;
-        var showHelp = false;
+        bool showHelp = false;
 
-        for (var i = 0; i < args.Length; i++)
+        for (int i = 0; i < args.Length; i++)
         {
             switch (args[i])
             {
                 case "-i" or "--input":
-                    inputPath = ReadValue(args, ref i, "--input", out var inputError);
+                    inputPath = ReadValue(args, ref i, "--input", out string? inputError);
 
                     if (inputError is not null)
                     {
@@ -46,7 +46,7 @@ public sealed class CliOptions
 
                     break;
                 case "-s" or "--schema":
-                    schemaPath = ReadValue(args, ref i, "--schema", out var schemaError);
+                    schemaPath = ReadValue(args, ref i, "--schema", out string? schemaError);
 
                     if (schemaError is not null)
                     {
@@ -55,7 +55,7 @@ public sealed class CliOptions
 
                     break;
                 case "-o" or "--output":
-                    outputPath = ReadValue(args, ref i, "--output", out var outputError);
+                    outputPath = ReadValue(args, ref i, "--output", out string? outputError);
 
                     if (outputError is not null)
                     {
