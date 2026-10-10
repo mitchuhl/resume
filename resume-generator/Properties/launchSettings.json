@@ -2,7 +2,7 @@
   "profiles": {
     "Generate Resume": {
       "commandName": "Project",
-      "commandLineArgs": "--input resume-instance.json --output resume-instance.pdf",
+      "commandLineArgs": "--input resume-instance-bidn.json --output output/resume-instance-bidn.pdf",
       "workingDirectory": "$(ProjectDir)..",
       "dotnetRunMessages": true
     }

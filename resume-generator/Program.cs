@@ -75,6 +75,13 @@ try
 
     string outputPath = options.ResolveOutputPath();
 
+    string? outputDirectory = Path.GetDirectoryName(outputPath);
+
+    if (!string.IsNullOrEmpty(outputDirectory))
+    {
+        Directory.CreateDirectory(outputDirectory);
+    }
+
     ResumePdfDocument pdfDocument = new ResumePdfDocument(resume);
     pdfDocument.GeneratePdf(outputPath);
 
@@ -100,7 +107,7 @@ static void PrintUsage()
         Options:
           -i, --input <path>     resume instance JSON file (default: resume-instance.json)
           -s, --schema <path>    jsonresume schema file (default: jsonresume/schema.json)
-          -o, --output <path>    output PDF file (default: <input file name>.pdf)
+          -o, --output <path>    output PDF file (default: output/<input file name>.pdf)
           -h, --help             show this help
         """);
 }

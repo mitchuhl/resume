@@ -2,6 +2,8 @@ namespace resume_generator;
 
 public sealed class CliOptions
 {
+    private const string OutputFolderName = "output";
+
     public string InputPath { get; private init; } = "resume-instance.json";
 
     public string SchemaPath { get; private init; } = Path.Combine("jsonresume", "schema.json");
@@ -19,10 +21,10 @@ public sealed class CliOptions
             return Path.GetFullPath(OutputPath);
         }
 
-        string inputFullPath = Path.GetFullPath(InputPath);
-        string directory = Path.GetDirectoryName(inputFullPath) ?? ".";
+        string fileName = Path.GetFileNameWithoutExtension(InputPath) + ".pdf";
+        string outputDirectory = Path.Combine(Directory.GetCurrentDirectory(), OutputFolderName);
 
-        return Path.Combine(directory, Path.GetFileNameWithoutExtension(inputFullPath) + ".pdf");
+        return Path.Combine(outputDirectory, fileName);
     }
 
     public static CliOptions Parse(string[] args)
