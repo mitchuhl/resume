@@ -311,18 +311,14 @@
       "startDate": "2003",
       "endDate": "2006",
       "courses": [
-        "C",
-        "C++",
-        "Java",
-        "J2ME",
+        "C / C++",
+        "Java / J2ME",
         "PHP",
-        "Project Management",
-        "Spanish",
         "DirectX",
         "Oracle",
-        "RAD (Rapid Application Development)",
-        "SDM",
-        "NIAM"
+        "Project Management",
+        "RAD / SDM / NIAM",
+        "Spanish"
       ],
       "url": "https://www.windesheim.nl"
     },
@@ -330,7 +326,7 @@
       "institution": "Deltion College, Zwolle, NL",
       "area": "Middenkaderfunctionaris kantoorautomatisering",
       "studyType": "MBO",
-      "startDate": "",
+      "startDate": "1999",
       "endDate": "2003",
       "courses": [
         "Pascal",
@@ -346,7 +342,7 @@
       "institution": "Bornego College, Wolvega, NL",
       "area": "Mavo (D)",
       "studyType": "Mavo",
-      "startDate": "",
+      "startDate": "1995",
       "endDate": "1999",
       "courses": [],
       "url": "https://www.bornego.nl"
