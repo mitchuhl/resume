@@ -112,7 +112,8 @@ Do not continue until all four inputs have been collected.
     - **Compact skills**: remove skills and their keywords when they are clearly irrelevant to the vacancy. Compacting is allowed to show only relevant skills.
     - **Compact education courses**: remove courses from education entries when they are irrelevant to the vacancy. Keep relevant courses only.
     - **Languages**: keep only languages requested in the vacancy or that are relevant to the role. Remove low-grade languages unless specifically asked for in the vacancy. Strongest languages must stay.
-    - Make all `description` and `summary` fields easy to read. The sentences need to flow smooth. Full sentences. No short enumerations.
+     - Make all `description` and `summary` fields easy to read. The sentences need to flow smooth. Full sentences. No short enumerations.
+     - Every entry in a `highlights` array must start with a capital letter, because the highlights are rendered later as a bullet list.
 
 7. **Review and reflect**
    - Tell the user who you are (based on the audience you've been given) and that you are going to read his resume (`resume-instance.json`).

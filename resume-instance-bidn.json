@@ -2,11 +2,11 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "basics": {
     "name": "Michael Raymond de Graaf",
-    "label": "Lead Software Developer",
+    "label": "Lead Developer",
     "email": "mrdegraaf@gmail.com",
     "phone": "+31625360524",
     "url": "https://www.probust.eu",
-    "summary": "Ik beschik over ruime ervaring in softwareontwikkeling, architectuur, data en integratie. Persoonlijk ben ik gestructureerd, leergierig, coachend en een echte teamspeler met leiderschapskwaliteiten. Privé ben ik vader van drie kinderen en maak ik graag gebruik van de bergen en de natuur door te mountainbiken en te hardlopen.",
+    "summary": "Als Lead Developer combineer ik diepgaande .NET- en Azure-expertise met jarenlange ervaring in het begeleiden van ontwikkelaars en het bewaken van technische kwaliteit. Ik heb een team van vier tot zes developers geleid, een team in Zuid-Afrika op afstand begeleid en in de loop van mijn carrière een tiental ontwikkelaars, stagiairs en trainees gecoacht, van onboarding tot het durven groeien in een senior- of leadrol. Mijn architectuurkeuzes hebben standaardisatie en onderhoudbaarheid opgeleverd: bij Kubion centraliseerde en standaardiseerde ik al het maatwerk in de KIM-integratielaag, zodat het centraal onderhouden en bij nieuwe en bestaande klanten uitgerold kon worden, en bij Probust ontwierp ik een sterk geëncapsuleerd applicatielandschap met hoge prestaties en beperkte operationele kosten. Code reviews structuur ik met verplichte pull requests en goedkeuring, zodat kwaliteit en kennisoverdracht structureel geborgd zijn. Beveiliging en privacy zijn voor mij vanzelfspelijk onderdeel van het ontwerp, van OAuth2, OpenID Connect, JWT en RBAC tot versleuteling, logging en AVG-bewuste verwerking met geanonimiseerde data en strikte scheiding van huurdersdata. De overgang van een externe ontwikkelpartner naar een intern team bij BIDN herken ik goed, want toen DataBalk in juli 2021 Kubion overnam, borgen wij de continuïteit van de integratiekoppelingen en de overdracht van kennis, en bij DataBalk en KWEEKERS begeleidde ik migraties tussen pakketten. Privé ben ik vader van drie kinderen en haal ik mijn energie uit hardlopen en mountainbiken.",
     "location": {
       "address": "Colijnstraat 5",
       "city": "Culemborg",
@@ -28,25 +28,42 @@
   },
   "work": [
     {
+      "name": "DataBalk",
+      "position": "Product Owner",
+      "startDate": "2021-07",
+      "endDate": "2024-04",
+      "location": "Utrecht, Nederland",
+      "description": "Als product owner bij DataBalk leidde ik een team van vier tot zes developers en begeleidde ik een team in Zuid-Afrika, waarnaartoe ik regelmatig reisde om de samenwerking, de technische richting en de kwaliteit scherp te houden. Toen DataBalk in juli 2021 Kubion overnam, was ik medeverantwoordelijk voor de continuïteit van de bestaande oplossingen, en zette ik mijn werk aan de integratiekoppelingen binnen de nieuwe organisatie voort tot april 2024. Ik was verantwoordelijk voor de integratie tussen IRIS- en ERP-systemen, de ontwikkeling van IRIS-suitecomponenten en een clientapplicatie voor servicevoorzieners, een tenantportaal en intranet, een beeldverwerker en de IRIS back-end. Privacy en beveiliging stonden daarbij voorop: ik werkte AVG-bewust met geanonimiseerde data en een strikte scheiding van huurdersdata, en bouwde ik met Azure DevOps, ASP.NET, MSSQL, REST-services en Azure-services zoals Key Vault, Entra ID, Azure SQL en Application Insights.",
+      "summary": "Bij DataBalk combineerde ik product ownership voor een team van vier tot zes developers met de ontwikkeling van IRIS-suitecomponenten en integraties tussen IRIS- en ERP-systemen, met aandacht voor beveiliging, privacy en continuïteit van de oplossingen voor woningcorporaties.",
+      "highlights": [
+        "Leiding geven aan een team van 4-6 developers",
+        "Begeleiding van een team in Zuid-Afrika, met regelmatig reizen",
+        "Continuïteit en kennisoverdracht na de overname van Kubion door DataBalk in juli 2021",
+        "Code reviews via pull requests met verplichte goedkeuring",
+        "Coaching van developers bij technische keuzes",
+        "Integratie tussen IRIS- en ERP-systemen",
+        "AVG-bewuste verwerking met geanonimiseerde data en strikte scheiding van huurdersdata",
+        "Azure DevOps, Azure SQL, Key Vault, Entra ID en Application Insights"
+      ]
+    },
+    {
       "name": "Probust",
       "position": "Eigenaar / Lead Developer",
       "startDate": "2025-05",
       "location": "Gelderland, Nederland",
-      "description": "Als eigenaar van Probust ben ik verantwoordelijk voor de volledige architectuur en full-stack ontwikkeling van een standaardsoftwareplatform. Daarbij beheer ik de CI/CD-pijplijn, het netwerk, de datastructuren en de rapportage, en zorg ik ook voor de SEO-optimalisatie van de oplossing.",
-      "summary": "Het Probust CMS-platform maakt gebruik van AI om websites te genereren op basis van één foto en functioneert als multi-tenant SaaS die van ondernemers tot grote bedrijven een complete business platform levert.",
+      "description": "Als eigenaar van Probust ben ik verantwoordelijk voor de volledige architectuur en full-stack ontwikkeling van een standaardsoftwareplatform. Ik heb het applicatielandschap zelf ingericht, bestaande uit een reverse proxy, front-end en back-end, en werk met sterke encapsulatiepatronen zoals connectors, adapters en repositories, waardoor onderdelen los vervangbaar en testbaar blijven. Mijn focus ligt op hoge prestaties en beperkte operationele kosten. Daarnaast beheer ik de CI/CD-pijplijn, het netwerk, de datastructuren, de rapportage en de SEO-optimalisatie van de oplossing, met hosting op Google Cloud Run.",
+      "summary": "Het Probust CMS-platform is een multi-tenant SaaS-oplossing die met behulp van AI websites genereert op basis van één foto en van ondernemers tot grote bedrijven een compleet business platform levert, met aandacht voor prestaties, onderhoudbaarheid en lage kosten.",
       "highlights": [
-        "AI-sitegeneratie op basis van één foto",
-        "multi-tenant SaaS CMS-architectuur",
+        "Multi-tenant SaaS CMS-architectuur",
+        "Applicatielandschap met reverse proxy, front-end en back-end",
+        "Encapsulatiepatronen: connectors, adapters en repositories",
+        "Hoge prestaties, beperkte operationele kosten",
         "ASP.NET back-end en front-end",
-        "Firestore NoSQL-database",
+        "AI-sitegeneratie op basis van één foto",
         "Google Cloud Run hosting",
         "GitHub Actions CI/CD",
-        "webshop met betalingen en levering",
-        "catalogus, reviews, contactformulieren",
-        "social media delen",
-        "geplande taken",
-        "lage operationele kosten",
-        "complete pakketlevering"
+        "Webshop met betalingen en levering",
+        "Firestore NoSQL-database"
       ]
     },
     {
@@ -54,31 +71,18 @@
       "position": "Product Owner, Senior Developer",
       "startDate": "2024-04",
       "location": "Oosterhout",
-      "description": "Als product owner en senior developer bij KWEEKERS werkte ik aan het low-code integratieplatform U-Turn, waarmee applicaties zonder programmeerkennis met elkaar verbonden kunnen worden. Ik zorgde ervoor dat dubbele gegevensinvoer werd voorkomen, gegevens actueel bleven en er eenvoudige aanpassingen vanuit standaardapplicaties mogelijk waren.",
-      "summary": "U-Turn is een low-code integratieplatform waarmee organisaties applicaties kunnen verbinden zonder dat daarvoor programmeerkennis nodig is.",
+      "description": "Als product owner en senior developer bij KWEEKERS werk ik aan het low-code integratieplatform U-Turn, waarmee applicaties zonder programmeerkennis met elkaar verbonden kunnen worden, zodat dubbele gegevensinvoer wordt voorkomen en gegevens actueel blijven. Het platform draait op Kubernetes-clusters die meeschalen met het gebruik, waardoor de oplossing stabiel blijft bij wisselende belasting, en ik heb recent webhooks toegepast voor Microsoft Graph en AFAS. Kwaliteit en beveiliging bewaken wij structureel: de frameworks houden we up-to-date om onze ISO-certificering te waarborgen, en we werken samen met een externe beveiligingspartij die pentests uitvoert, waarbij ik bevindingen direct laat oplossen. Daarnaast ondersteun ik migraties tussen pakketten.",
+      "summary": "U-Turn is een low-code integratieplatform waarmee organisaties applicaties verbinden zonder programmeerkennis, met schaalbare Kubernetes-clusters, webhooks voor Microsoft Graph en AFAS, en een structurele focus op kwaliteit, ISO-certificering en beveiliging.",
       "highlights": [
-        "voorkomen van dubbele gegevensinvoer",
-        "gegevens up-to-date houden",
-        "aanpassingen vanuit standaardapplicaties",
-        "ondersteunen van migraties tussen pakketten"
-      ]
-    },
-    {
-      "name": "DataBalk",
-      "position": "Product Owner",
-      "startDate": "2021-07",
-      "endDate": "2024-04",
-      "location": "Utrecht, Nederland",
-      "description": "Als product owner bij DataBalk was ik verantwoordelijk voor de integratie tussen IRIS- en ERP-systemen en de ontwikkeling van IRIS-suitecomponenten. Daarnaast werkte ik aan een clientapplicatie voor servicevoorzieners, een tenantportaal en intranet, de back-end en integratielaag, een beeldverwerker en de IRIS back-end.",
-      "summary": "Bij DataBalk ontwikkelde ik integraties tussen IRIS en ERP-systemen en bouwde ik IRIS-suitecomponenten die ondersteuning bieden bij mailing, telefonie, documentsynchronisatie, rapportage en ERP-integratie.",
-      "highlights": [
-        "clientapplicatie voor servicevoorzieners",
-        "tenantportaal en intranet",
-        "back-end, integratielaag",
-        "beeldverwerker",
-        "IRIS back-end",
-        "mailing, telefonie, documentsynchronisatie, rapportage",
-        "ERP-integratie"
+        "Schaalbare Kubernetes-clusters die meeschalen met het gebruik",
+        "Webhooks voor Microsoft Graph en AFAS",
+        "ISO-certificering door up-to-date frameworks",
+        "Pentests met een externe beveiligingspartij, bevindingen opgelost",
+        "AI-ondersteunde code review (Code Rabbit, GitLab Duo)",
+        "Ondersteunen van migraties tussen pakketten",
+        "Voorkomen van dubbele gegevensinvoer",
+        "Gegevens actueel houden",
+        "Aanpassingen vanuit standaardapplicaties"
       ]
     },
     {
@@ -87,16 +91,17 @@
       "startDate": "2018-10",
       "endDate": "2021-07",
       "location": "Nederland",
-      "description": "Als technisch architect bij Kubion B.V. was ik verantwoordelijk voor KIM, de Kubion Integratie Module die KCC en tenantportalen verbindt met ERP en andere systemen. Ik ontwierp real-time en batch-gegevenssynchronisatie, fungeerde als brug tussen product owner, stakeholders en het ontwikkelteam en mentorde collega's en trainees.",
-      "summary": "KIM verbindt klantenservice en tenantportalen met ERP door middel van gegevenssynchronisatie die zowel real-time als incrementeel werkt en ook pub-sub ondersteunt, terwijl ik tegelijkertijd de verbinding tussen de verschillende belanghebbenden en het team onderhield en collega's en trainees begeleidde.",
+      "description": "Als technisch architect bij Kubion B.V. was ik verantwoordelijk voor KIM, de Kubion Integratie Module die KCC en tenantportalen verbindt met ERP en andere systemen. Ik ontwierp real-time en batch-gegevenssynchronisatie, pub-sub voor bijna realtime synchronisatie, en centraliseerde en standaardiseerde alle maatwerkoplossingen die developers en technische consultants hadden gebouwd, zodat zij centraal onderhouden en bij nieuwe en bestaande klanten uitgerold konden worden. Ik fungeerde als brug tussen product owner, stakeholders en het ontwikkelteam, voerde code reviews uit met verplichte goedkeuring via pull requests, en mentorde collega's en trainees. Deze combinatie van migraties, kennisoverdracht en het verbinden van stakeholders en developers is precies wat de overgang van een externe ontwikkelpartner naar een intern team vraagt.",
+      "summary": "KIM verbindt klantenservice en tenantportalen met ERP door middel van gegevenssynchronisatie die real-time, incrementeel en via pub-sub werkt, met gecentraliseerd en gestandaardiseerd maatwerk, terwijl ik de verbinding tussen stakeholders en het team onderhield en collega's en trainees mentorde.",
       "highlights": [
         "KIM (Kubion Integratie Module)",
         "KCC (klantenservice)",
         "ERP-integratie",
-        "real-time en batch-gegevenssynchronisatie",
-        "pub-sub gegevenssynchronisatie",
-        "stakeholder-/teambrug",
-        "mentoren van collega's en trainees",
+        "Real-time, batch- en pub-sub gegevenssynchronisatie",
+        "Centralisatie en standaardisatie van al het maatwerk, centraal onderhouden",
+        "Brug tussen product owner, stakeholders en ontwikkelteam",
+        "Code reviews met verplichte goedkeuring via pull requests",
+        "Mentoren van collega's en trainees",
         "ASP.NET, MSSQL, SSAS, JavaScript, Ajax, REST-services"
       ]
     },
@@ -106,17 +111,15 @@
       "startDate": "2007-04",
       "endDate": "2018-10",
       "location": "Nieuwegein, Nederland",
-      "description": "Als software engineer bij Kubion B.V. ontwikkelde ik webapplicaties voor Nederlandse woningcorporaties op basis van ASP.NET, MSSQL, SSAS, JavaScript, Ajax en REST-services. Daarnaast leverde ik een bijdrage aan de IRIS-suite, het tenantportaal, ETL-tools en SSIS-ondersteuning.",
-      "summary": "Bij Kubion B.V. werkte ik aan applicaties voor Nederlandse woningcorporaties, de IRIS-suite, een tenantportaal, ETL-tools, SSIS-ondersteuning en klantimplementaties, allemaal gebaseerd op ASP.NET, MSSQL, SSAS, JavaScript, Ajax en REST-services.",
+      "description": "In het eerste deel van mijn loopbaan bij Kubion B.V. ontwikkelde ik webapplicaties voor Nederlandse woningcorporaties, waaronder een normalisatie- en waarderingsapplicatie, een beheerdersapplicatie voor VvE's en de front-end van het eerste tenantportaal, allemaal gebaseerd op ASP.NET, MSSQL, SSAS, JavaScript, Ajax en REST-services. Ik leverde bijdragen aan de IRIS-suite, ETL-tools en SSIS-ondersteuning, en begeleidde klantimplementaties.",
+      "summary": "Bij Kubion B.V. bouwde ik meer dan tien jaar aan applicaties voor Nederlandse woningcorporaties, de IRIS-suite, een tenantportaal, ETL-tools en klantimplementaties, allemaal op basis van ASP.NET, MSSQL, SSAS, JavaScript, Ajax en REST-services.",
       "highlights": [
-        "normalisatie- en waarderingsapplicatie",
-        "beheerdersapplicatie voor VvE's",
-        "Nederlandse woningcorporaties",
+        "Normalisatie- en waarderingsapplicatie",
+        "Beheerdersapplicatie voor VvE's",
+        "Eerste tenantportaal front-end",
         "IRIS-clientapplicatie",
-        "ETL-tools",
-        "SSIS-ondersteuning",
-        "eerste tenantportaal front-end",
-        "klantimplementaties"
+        "ETL-tools en SSIS-ondersteuning",
+        "Klantimplementaties"
       ]
     }
   ],
@@ -129,17 +132,12 @@
       "startDate": "2003",
       "endDate": "2006",
       "courses": [
-        "C",
-        "C++",
-        "Java",
-        "J2ME",
+        "C / C++",
+        "Java / J2ME",
         "PHP",
         "Project Management",
-        "DirectX",
         "Oracle",
-        "RAD (Rapid Application Development)",
-        "SDM",
-        "NIAM"
+        "RAD / SDM / NIAM"
       ],
       "url": "https://www.windesheim.nl"
     },
@@ -153,7 +151,7 @@
         "Pascal",
         "C++",
         "Delphi",
-        "DBase4",
+        "dBase4",
         "Access",
         "OO"
       ],
@@ -184,6 +182,7 @@
       "lastUsed": "2026",
       "usedAt": "Probust, Kubion B.V., Wija Koers Relatiemarketing, Ifective ICT Services bv",
       "keywords": [
+        "C#",
         "C# .NET",
         "dotnet",
         "ASP.NET",
@@ -195,10 +194,18 @@
       "type": "Cloud",
       "level": "Expert",
       "lastUsed": "2026",
-      "usedAt": "Probust, Kubion B.V.",
+      "usedAt": "Kubion B.V., DataBalk",
       "keywords": [
         "Azure",
-        "Azure DevOps"
+        "Azure DevOps",
+        "App Service",
+        "Azure Functions",
+        "Azure SQL",
+        "Key Vault",
+        "Entra ID",
+        "Storage",
+        "Service Bus",
+        "Application Insights"
       ]
     },
     {
@@ -215,9 +222,66 @@
         "GraphQL",
         "OpenAPI",
         "Swagger",
-        "Authorisation",
-        "Authentication",
         "Systeemintegratie"
+      ]
+    },
+    {
+      "name": "Security en privacy",
+      "type": "Softwareontwikkeling",
+      "level": "Expert",
+      "lastUsed": "2026",
+      "usedAt": "KWEEKERS, DataBalk, Kubion B.V.",
+      "keywords": [
+        "OAuth2",
+        "OpenID Connect",
+        "JWT",
+        "RBAC",
+        "Authentication",
+        "Authorisation",
+        "Encryption",
+        "Logging",
+        "Audit trails",
+        "GDPR (AVG)",
+        "Anonimisatie van data",
+        "Scheiding van huurdersdata",
+        "ISO-certificering",
+        "Pentests"
+      ]
+    },
+    {
+      "name": "Softwarearchitectuur",
+      "type": "Softwareontwikkeling",
+      "level": "Expert",
+      "lastUsed": "2026",
+      "usedAt": "Probust, Kubion B.V., DataBalk, KWEEKERS",
+      "keywords": [
+        "applicatielandschap (reverse proxy, front-end, back-end)",
+        "encapsulatie (connectors, adapters, repository)",
+        "multi-tenant SaaS",
+        "hoge prestaties",
+        "centralisatie en standaardisatie van maatwerk",
+        "pub-sub near realtime synchronisatie"
+      ]
+    },
+    {
+      "name": "Teamleiderschap en coaching",
+      "type": "Product Management",
+      "level": "Expert",
+      "lastUsed": "2024",
+      "usedAt": "DataBalk, Kubion B.V.",
+      "keywords": [
+        "leiding geven aan ontwikkelingsteams",
+        "begeleiden van teams op afstand",
+        "mentoring van developers en trainees",
+        "coaching",
+        "onboarding van nieuwe collega's",
+        "kennisoverdracht",
+        "hulp bij technische keuzes",
+        "developers laten groeien naar leadrollen",
+        "code reviews",
+        "pull requests met verplichte goedkeuring",
+        "reviewrichtlijnen",
+        "pair programming"
       ]
     },
     {
@@ -229,24 +293,11 @@
       "keywords": []
     },
     {
-      "name": "SCRUM",
-      "type": "Agile",
-      "level": "Expert",
-      "lastUsed": "2026",
-      "usedAt": "DataBalk, KWEEKERS, Kubion B.V.",
-      "keywords": [
-        "Scrum Master",
-        "Sprint",
-        "Jira",
-        "Azure DevOps"
-      ]
-    },
-    {
-      "name": "Teamleiderschap",
-      "type": "Product Management",
+      "name": "Data-architectuur",
+      "type": "Database",
       "level": "Expert",
       "lastUsed": "2024",
-      "usedAt": "DataBalk",
+      "usedAt": "Kubion B.V., DataBalk",
       "keywords": []
     },
     {
@@ -262,6 +313,30 @@
         "webhooks",
         "Reporting",
         "Systeemintegratie"
+      ]
+    },
+    {
+      "name": "Kubernetes",
+      "type": "Cloud",
+      "level": "Intermediate",
+      "lastUsed": "2026",
+      "usedAt": "KWEEKERS",
+      "keywords": [
+        "clusters",
+        "schalen op gebruik"
+      ]
+    },
+    {
+      "name": "SCRUM",
+      "type": "Agile",
+      "level": "Expert",
+      "lastUsed": "2026",
+      "usedAt": "DataBalk, KWEEKERS, Kubion B.V.",
+      "keywords": [
+        "Scrum Master",
+        "Sprint",
+        "Jira",
+        "Azure DevOps"
       ]
     },
     {
@@ -285,6 +360,8 @@
       "usedAt": "Kubion B.V., DataBalk, KWEEKERS, Probust",
       "keywords": [
         "Code Review",
+        "pull requests met verplichte goedkeuring",
+        "AI-ondersteunde code review (Code Rabbit, GitLab Duo)",
         "Subversion (svn)",
         "Git (BitBucket)",
         "Git (Azure DevOps)",
@@ -293,14 +370,6 @@
         "pipeline",
         "CI/CD"
       ]
-    },
-    {
-      "name": "Data-architectuur",
-      "type": "Database",
-      "level": "Expert",
-      "lastUsed": "2024",
-      "usedAt": "Kubion B.V., DataBalk",
-      "keywords": []
     }
   ],
   "languages": [
@@ -343,14 +412,16 @@
   "projects": [
     {
       "name": "KIM",
-      "description": "KIM, de Kubion Integratie Module, integreert tenant- en klantenserviceportalen met ERP en andere systemen door gebruik te maken van gegevensadapters en gegevenssynchronisatie die zowel een eerste keer als incrementeel wordt geladen en ook pub-sub ondersteunt.",
+      "description": "KIM, de Kubion Integratie Module, integreert tenant- en klantenserviceportalen met ERP en andere systemen door gebruik te maken van gegevensadapters en gegevenssynchronisatie die zowel een eerste keer als incrementeel wordt geladen en ook pub-sub ondersteunt. Na de overname van Kubion door DataBalk in juli 2021 werd KIM binnen DataBalk voortgezet tot april 2024, waarbij al het maatwerk werd gecentraliseerd, gestandaardiseerd, uitgerold bij nieuwe en bestaande klanten en centraal onderhouden.",
       "startDate": "2015-01",
       "endDate": "2024-04",
       "url": "https://www.corporatiegids.nl/nl/nieuws/jos_balk_databalk_overname_kubion_versterkt_onze_positie_in_het_domein_klantenservice-6885",
       "highlights": [
         "Systemen integreren",
-        "gegevensadapters",
-        "gegevenssynchronisatie (initial load, incrementeel, pub-sub)"
+        "Gegevensadapters",
+        "Gegevenssynchronisatie (initial load, incrementeel, pub-sub)",
+        "Centralisatie en standaardisatie van maatwerk, centraal onderhouden",
+        "Continuïteit na de overname van Kubion door DataBalk"
       ],
       "keywords": [
         "ERP-integratie",
@@ -370,15 +441,15 @@
   ],
   "meta": {
     "canonical": "https://raw.githubusercontent.com/mitchuhl/resume/refs/heads/main/resume.json",
-    "version": "v0.22.0",
-    "lastModified": "2026-10-07T19:39:00Z",
+    "version": "v0.23.0",
+    "lastModified": "2026-10-10T19:25:00Z",
     "vacancyContext": {
       "companyType": "Government agency",
       "role": "Lead Developer",
       "vacancySource": "https://www.bidn.nl/vacatures/lead-developer",
       "vacancyLanguage": "nl",
       "readerRole": "Hiring manager",
-      "audience": "Hiring manager bij BIDN (Bureau InformatieDienden Nederland), een overheidsinformatiedienst die gemeenten ondersteunt bij dienstverlening aan inwoners. Waardeert betrouwbaarheid, compliance, maatschappelijke impact, technische kwaliteit, teamontwikkeling en Agile/Scrum-werkwijze in een Microsoft-omgeving."
+      "audience": "Hiring manager bij BIDN (Bureau InformatieDiensten Nederland), een overheidsinformatiedienst die gemeenten ondersteunt bij dienstverlening aan inwoners. Waardeert betrouwbaarheid, compliance, maatschappelijke impact, technische kwaliteit, teamontwikkeling en Agile/Scrum-werkwijze in een Microsoft-omgeving. De rol draait om de overgang van een externe ontwikkelpartner in Enschede naar een eigen intern team in Utrecht, met kennisoverdracht, coaching, code reviews, technische visie, kwaliteit, veiligheid en continuïteit van het Schuldenknooppunt."
     }
   }
 }

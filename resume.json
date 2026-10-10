@@ -6,7 +6,7 @@
     "email": "mrdegraaf@gmail.com",
     "phone": "+31625360524",
     "url": "https://www.probust.eu",
-    "summary": "- interests: software development, strategy, data\n- private: father of 3, mountainbike, running\n- personal: Structured, Eager to learn, Coaching, Leadership, Team player",
+    "summary": "- interests: software development, strategy, data\n- private: father of 3, mountainbike, running\n- personal: Structured, Eager to learn, Coaching, Leadership, Team player\n- leadership: led team of 4-6 developers, led team in South Africa, mentored 6-10 developers and trainees, structured code reviews",
     "location": {
       "address": "Colijnstraat 5",
       "city": "Culemborg",
@@ -32,7 +32,7 @@
       "position": "Owner",
       "startDate": "2025-05",
       "location": "Gelderland, Netherlands",
-      "description": "company: Probust, one-man standard software development\nrole: owner, architect, full-stack development, ASP.NET, Firestore, Google Cloud, CI/CD, network management, SEO, data structures, reporting",
+      "description": "company: Probust, one-man standard software development\nrole: owner, architect, full-stack development, ASP.NET, Firestore, Google Cloud, CI/CD, network management, SEO, data structures, reporting, application landscape reverse proxy front end back end, encapsulation patterns connectors adapters repository, high performance",
       "summary": "Probust CMS platform, AI-powered website generation from photo, multi-tenant SaaS for entrepreneurs to big companies, complete Business Platform delivery",
       "highlights": [
         "AI site generation from single photo",
@@ -46,7 +46,10 @@
         "social media sharing",
         "scheduled tasks",
         "low overhead costs",
-        "complete package delivery"
+        "complete package delivery",
+        "application landscape: reverse proxy, front end, back end",
+        "encapsulation patterns: connectors, adapters, repository",
+        "high performance"
       ]
     },
     {
@@ -54,13 +57,18 @@
       "position": "Product Owner, Senior Developer",
       "startDate": "2024-04",
       "location": "Oosterhout",
-      "description": "company: low-code integration platform U-Turn\nrole: Product Owner, Senior Developer, connect applications without programming knowledge",
-      "summary": "low-code integration platform U-Turn, connect applications without programming knowledge",
+      "description": "company: low-code integration platform U-Turn\nrole: Product Owner, Senior Developer, connect applications without programming knowledge, kubernetes clusters that scale on usage, webhooks for Microsoft Graph and AFAS, ISO certification, frameworks kept up to date, pentests with external security company, findings fixed",
+      "summary": "low-code integration platform U-Turn, connect applications without programming knowledge, kubernetes clusters that scale on usage, ISO certification, pentests",
       "highlights": [
         "prevent duplicate entry",
         "keep data up to date",
         "customization from standard applications",
-        "support migrations between packages"
+        "support migrations between packages",
+        "kubernetes clusters scale on usage",
+        "webhooks for Microsoft Graph and AFAS",
+        "ISO certification, frameworks kept up to date",
+        "pentests with external security company, findings fixed",
+        "AI supported code review (Code Rabbit, GitLab Duo)"
       ]
     },
     {
@@ -69,8 +77,8 @@
       "startDate": "2021-07",
       "endDate": "2024-04",
       "location": "Utrecht, Netherlands",
-      "description": "company: integration between IRIS and ERP systems\nrole: Product Owner, develop IRIS suite components",
-      "summary": "integration between IRIS and ERP systems, IRIS suite components, ERP integration",
+      "description": "company: DataBalk, took over Kubion july 2021, continued KIM until april 2024\nrole: Product Owner, lead team of 4-6 developers, lead team in South Africa, regular travel to South Africa, integration between IRIS and ERP systems, develop IRIS suite components, AVG anonymisation of data, strict separation of tenant data",
+      "summary": "integration between IRIS and ERP systems, IRIS suite components, ERP integration, product owner of team of 4-6 developers, lead team in South Africa, AVG anonymisation, tenant data separation",
       "highlights": [
         "client application for service workers",
         "tenant portal and intranet",
@@ -78,7 +86,10 @@
         "image processor",
         "IRIS back-end",
         "mailing, telephony, document synchronization, reporting",
-        "ERP integration"
+        "ERP integration",
+        "lead team of 4-6 developers",
+        "lead team in South Africa, regular travel",
+        "AVG anonymisation of data, strict separation of tenant data"
       ]
     },
     {
@@ -87,8 +98,8 @@
       "startDate": "2018-10",
       "endDate": "2021-07",
       "location": "Netherlands",
-      "description": "company: Kubion B.V.\nrole: Technical Architect, KIM (Kubion Integratie Module), connect KCC (customer service) and tenant portals to ERP, real-time and batch data synchronization, stakeholder/team bridging, mentor",
-      "summary": "KIM (Kubion Integratie Module), connect KCC (customer service) and tenant portals to ERP, data sync (real-time, incremental, pub-sub), bridge product owner/stakeholders/team, mentor colleagues and trainees",
+      "description": "company: Kubion B.V., taken over by DataBalk july 2021\nrole: Technical Architect, KIM (Kubion Integratie Module), connect KCC (customer service) and tenant portals to ERP, real-time and batch data synchronization, pub-sub near realtime sync, centralized and standardized all custom work, deployed at new and existing customers, centrally maintained, stakeholder/team bridging, mentor",
+      "summary": "KIM (Kubion Integratie Module), connect KCC (customer service) and tenant portals to ERP, data sync (real-time, incremental, pub-sub), centralized and standardized all custom work, centrally maintained, bridge product owner/stakeholders/team, mentored 6-10 developers and trainees, structured code reviews with pull requests and mandatory approval",
       "highlights": [
         "KIM (Kubion Integratie Module)",
         "KCC (customer service)",
@@ -97,6 +108,7 @@
         "pub-sub data synchronization",
         "stakeholder/team bridging",
         "mentor colleagues and trainees",
+        "code reviews, pull requests, mandatory approval",
         "ASP.NET, MSSQL, SSAS, JavaScript, Ajax, REST services"
       ]
     },
@@ -352,14 +364,14 @@
       "area": "Atheneum",
       "studyType": "Atheneum",
       "courses": [],
-      "url": ""
+      "url": "https://lindecollege.nl"
     },
     {
       "institution": "Havo, Linde College, Wolvega, NL",
       "area": "Havo",
       "studyType": "Havo",
       "courses": [],
-      "url": ""
+      "url": "https://lindecollege.nl"
     }
   ],
   "awards": [],
@@ -428,14 +440,33 @@
       ]
     },
     {
+      "name": "Kubernetes",
+      "type": "Cloud",
+      "level": "Intermediate",
+      "lastUsed": "2026",
+      "usedAt": "KWEEKERS",
+      "keywords": [
+        "clusters",
+        "scaling on usage"
+      ]
+    },
+    {
       "name": "Azure",
       "type": "Cloud",
       "level": "Expert",
       "lastUsed": "2026",
-      "usedAt": "Probust, Kubion B.V.",
+      "usedAt": "Kubion B.V., DataBalk",
       "keywords": [
         "Azure",
-        "Azure DevOps"
+        "Azure DevOps",
+        "App Service",
+        "Azure Functions",
+        "Azure SQL",
+        "Key Vault",
+        "Entra ID",
+        "Storage",
+        "Service Bus",
+        "Application Insights"
       ]
     },
     {
@@ -469,6 +500,22 @@
       "keywords": []
     },
     {
+      "name": "Software Architecture",
+      "type": "Software Development",
+      "level": "Expert",
+      "lastUsed": "2026",
+      "usedAt": "Probust, Kubion B.V., DataBalk, KWEEKERS",
+      "keywords": [
+        "application landscape (reverse proxy, front end, back end)",
+        "encapsulation (connectors, adapters, repository)",
+        "multi-tenant SaaS",
+        "high performance",
+        "centralized and standardized custom work",
+        "kubernetes clusters that scale on usage",
+        "pub-sub near realtime sync"
+      ]
+    },
+    {
       "name": "Version Control",
       "type": "Software Development",
       "level": "Expert",
@@ -482,7 +529,8 @@
         "GitLab",
         "GitHub",
         "pipeline",
-        "CI/CD"
+        "CI/CD",
+        "AI supported code review (Code Rabbit, GitLab Duo)"
       ]
     },
     {
@@ -499,9 +547,30 @@
         "GraphQL",
         "OpenAPI",
         "Swagger",
+        "System Integration"
+      ]
+    },
+    {
+      "name": "Security",
+      "type": "Software Development",
+      "level": "Expert",
+      "lastUsed": "2026",
+      "usedAt": "KWEEKERS, DataBalk, Kubion B.V.",
+      "keywords": [
+        "OAuth2",
+        "OpenID Connect",
+        "JWT",
+        "RBAC",
         "Authorisation",
         "Authentication",
-        "System Integration"
+        "Encryption",
+        "Logging",
+        "Audit trails",
+        "GDPR (AVG)",
+        "Anonymisation of data",
+        "Separation of tenant data",
+        "ISO certification",
+        "Pentests"
       ]
     },
     {
@@ -566,8 +635,19 @@
       "type": "Product Management",
       "level": "Expert",
       "lastUsed": "2024",
-      "usedAt": "DataBalk",
-      "keywords": []
+      "usedAt": "DataBalk, Kubion B.V.",
+      "keywords": [
+        "coaching",
+        "mentoring developers and trainees",
+        "onboarding new colleagues",
+        "knowledge transfer",
+        "help with technical decisions",
+        "growing developers into lead roles",
+        "code reviews",
+        "pull requests with mandatory approval",
+        "review guidelines",
+        "pair programming"
+      ]
     },
     {
       "name": "Data Architecture",
@@ -756,7 +836,7 @@
   "projects": [
     {
       "name": "KIM",
-      "description": "Kubion Integration Module integrates tenant and customer care portals to ERP and other systems",
+      "description": "Kubion Integration Module integrates tenant and customer care portals to ERP and other systems, continued within DataBalk after takeover of Kubion july 2021 until april 2024, all custom work centralized, standardized, deployed at new and existing customers and centrally maintained",
       "startDate": "2015-01",
       "endDate": "2024-04",
       "url": "https://www.corporatiegids.nl/nl/nieuws/jos_balk_databalk_overname_kubion_versterkt_onze_positie_in_het_domein_klantenservice-6885",
@@ -783,7 +863,7 @@
   ],
   "meta": {
     "canonical": "https://raw.githubusercontent.com/mitchuhl/resume/refs/heads/main/resume.json",
-    "version": "v0.22.0",
-    "lastModified": "2026-10-06T19:01:00"
+    "version": "v0.23.0",
+    "lastModified": "2026-10-10T19:25:00"
   }
 }
