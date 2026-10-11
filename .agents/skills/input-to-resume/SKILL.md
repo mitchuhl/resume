@@ -85,6 +85,11 @@ Use `@/jsonresume/schema.json` as the source of truth for what fields and struct
 - After each confirmed addition, save the updated data back to `/resume.json`.
 - Keep entries concise and keyword-oriented, matching the existing style of `/resume.json`.
 - In the `work` section, always order entries by `startDate` from newest to oldest.
+- In the `work` section, keep `description`, `summary`, and `highlights` free of duplicated information:
+  - `description` — only the existing `company:`/`role:` format. The `company:` line holds a short description of what the company does (a few keywords, no full sentences). The `role:` line holds **only the role title** — name the role, never describe the work or the responsibilities.
+  - `summary` — all responsibilities, tasks, and achievements for that role at that company.
+  - `highlights` — only notable deliverables or achievements that are not already covered by `summary`.
+  - Never repeat the same fact in more than one of these fields.
 - In the `education` section, format the `institution` attribute as `{name}, {city}, {countryCode}`.
  - In the `education` section, always order entries by `startDate` from newest to oldest.
    - If `startDate` is not present, assume it's old.
