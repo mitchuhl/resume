@@ -9,6 +9,7 @@ public sealed class ResumePdfDocument : IDocument
 {
     private const float SidebarWidth = 178.6f;
     private const float PhotoSize = 112f;
+    private const int SkillLevelSegments = 4;
     private const string DefaultPhotoFileName = "photo.jpg";
 
     private static readonly Color SidebarBackground = Color.FromHex("#1F4E79");
@@ -17,17 +18,19 @@ public sealed class ResumePdfDocument : IDocument
     private static readonly Color SidebarMuted = Color.FromHex("#B8CCE0");
     private static readonly Color Accent = SidebarBackground;
 
-    private static readonly Dictionary<string, float> SkillLevelFractions = new(StringComparer.OrdinalIgnoreCase)
+    private static readonly Dictionary<string, int> SkillLevelSegmentCounts = new(StringComparer.OrdinalIgnoreCase)
     {
-        ["no experience"] = 0.2f,
-        ["beginner"] = 0.2f,
-        ["elementary"] = 0.2f,
-        ["novice"] = 0.2f,
-        ["intermediate"] = 0.4f,
-        ["advanced"] = 0.6f,
-        ["proficient"] = 0.8f,
-        ["expert"] = 0.8f,
-        ["master"] = 1f
+        ["no experience"] = 1,
+        ["basic"] = 1,
+        ["beginner"] = 1,
+        ["elementary"] = 1,
+        ["novice"] = 1,
+        ["intermediate"] = 2,
+        ["advanced"] = 3,
+        ["proficient"] = 3,
+        ["expert"] = 4,
+        ["master"] = 4,
+        ["fluent"] = 4
     };
 
     private readonly Resume _resume;
@@ -270,7 +273,7 @@ public sealed class ResumePdfDocument : IDocument
 
             foreach (Skill skill in items)
             {
-                item.Item().PaddingBottom(7).Column(skillColumn =>
+                item.Item().PreventPageBreak().PaddingBottom(7).Column(skillColumn =>
                 {
                     skillColumn.Item().Row(row =>
                     {
@@ -290,17 +293,21 @@ public sealed class ResumePdfDocument : IDocument
                         }
                     });
 
-                    float fraction = ResolveSkillLevelFraction(skill.Level);
-
                     skillColumn.Item()
-                        .PaddingTop(3)
-                        .Height(5)
-                        .Background(SidebarTrack)
-                        .CornerRadius(2.5f)
+                        .PaddingTop(4)
+                        .Height(7)
                         .Row(row =>
                         {
-                            row.RelativeItem(fraction).Height(5).Background(SidebarText).CornerRadius(2.5f);
-                            row.RelativeItem(1f - fraction);
+                            for (int segment = 0; segment < SkillLevelSegments; segment++)
+                            {
+                                bool isFilled = segment < ResolveSkillLevelSegments(skill.Level);
+
+                                row.RelativeItem()
+                                    .PaddingRight(segment < SkillLevelSegments - 1 ? 4 : 0)
+                                    .Height(7)
+                                    .CornerRadius(1.5f)
+                                    .Background(isFilled ? SidebarText : SidebarTrack);
+                            }
                         });
 
                     List<string> keywords = skill.Keywords?.Where(keyword => !string.IsNullOrWhiteSpace(keyword)).ToList() ?? [];
@@ -460,16 +467,16 @@ public sealed class ResumePdfDocument : IDocument
             .FontColor(SidebarText);
     }
 
-    private static float ResolveSkillLevelFraction(string? level)
+    private static int ResolveSkillLevelSegments(string? level)
     {
         if (string.IsNullOrWhiteSpace(level))
         {
-            return 0.4f;
+            return 0;
         }
 
-        return SkillLevelFractions.TryGetValue(level, out float fraction)
-            ? fraction
-            : 0.5f;
+        return SkillLevelSegmentCounts.TryGetValue(level, out int segments)
+            ? segments
+            : 0;
     }
 
     private void ComposeContent(IContainer container)
