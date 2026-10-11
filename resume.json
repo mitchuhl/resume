@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "basics": {
-    "name": "Michael Raymond de Graaf",
+    "name": "Michael de Graaf",
     "label": "Product Owner and Software Engineer",
     "email": "mrdegraaf@gmail.com",
     "phone": "+31625360524",
@@ -21,10 +21,11 @@
         "url": "https://www.linkedin.com/in/michael-de-graaf-software-developer/"
       }
     ],
-    "maritalStatus": "Married with 3 children",
+    "maritalStatus": "Married",
     "birthDate": "1981-10-15",
     "birthPlace": "Meppel, NL",
-    "nationality": "Dutch"
+    "nationality": "Dutch",
+    "middleName": "Raymond"
   },
   "work": [
     {

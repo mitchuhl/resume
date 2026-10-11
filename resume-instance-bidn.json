@@ -1,12 +1,12 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "basics": {
-    "name": "Michael Raymond de Graaf",
+    "name": "Michael de Graaf",
     "label": "Lead Developer",
     "email": "mrdegraaf@gmail.com",
     "phone": "+31625360524",
     "url": "https://www.probust.eu",
-    "summary": "Als Lead Developer combineer ik diepgaande .NET- en Azure-expertise met jarenlange ervaring in het begeleiden van ontwikkelaars en het bewaken van technische kwaliteit. Ik heb een team van vier tot zes developers geleid, een team in Zuid-Afrika op afstand begeleid en in de loop van mijn carrière een tiental ontwikkelaars, stagiairs en trainees gecoacht, van onboarding tot het durven groeien in een senior- of leadrol. Mijn architectuurkeuzes hebben standaardisatie en onderhoudbaarheid opgeleverd: bij Kubion centraliseerde en standaardiseerde ik al het maatwerk in de KIM-integratielaag, zodat het centraal onderhouden en bij nieuwe en bestaande klanten uitgerold kon worden, en bij Probust ontwierp ik een sterk geëncapsuleerd applicatielandschap met hoge prestaties en beperkte operationele kosten. Code reviews structuur ik met verplichte pull requests en goedkeuring, zodat kwaliteit en kennisoverdracht structureel geborgd zijn. Beveiliging en privacy zijn voor mij vanzelfspelijk onderdeel van het ontwerp, van OAuth2, OpenID Connect, JWT en RBAC tot versleuteling, logging en AVG-bewuste verwerking met geanonimiseerde data en strikte scheiding van huurdersdata. De overgang van een externe ontwikkelpartner naar een intern team bij BIDN herken ik goed, want toen DataBalk in juli 2021 Kubion overnam, borgen wij de continuïteit van de integratiekoppelingen en de overdracht van kennis, en bij DataBalk en KWEEKERS begeleidde ik migraties tussen pakketten. Privé ben ik vader van drie kinderen en haal ik mijn energie uit hardlopen en mountainbiken.",
+    "summary": "Ik beschik over ruime ervaring in softwareontwikkeling, architectuur, data en integratie. Persoonlijk ben ik gestructureerd, leergierig, coachend en een echte teamspeler met leiderschapskwaliteiten. Privé ben ik vader van drie kinderen en maak ik graag gebruik van de bergen en de natuur door te mountainbiken en te hardlopen.",
     "location": {
       "address": "Colijnstraat 5",
       "city": "Culemborg",
@@ -21,10 +21,11 @@
         "url": "https://www.linkedin.com/in/michael-de-graaf-software-developer/"
       }
     ],
-    "maritalStatus": "Getrouwd met 3 kinderen",
+    "maritalStatus": "Getrouwd",
     "birthDate": "1981-10-15",
     "birthPlace": "Meppel, NL",
-    "nationality": "Nederlands"
+    "nationality": "Nederlandse",
+    "middleName": "Raymond"
   },
   "work": [
     {
@@ -48,7 +49,7 @@
     },
     {
       "name": "Probust",
-      "position": "Eigenaar / Lead Developer",
+      "position": "Eigenaar",
       "startDate": "2025-05",
       "location": "Gelderland, Nederland",
       "description": "Als eigenaar van Probust ben ik verantwoordelijk voor de volledige architectuur en full-stack ontwikkeling van een standaardsoftwareplatform. Ik heb het applicatielandschap zelf ingericht, bestaande uit een reverse proxy, front-end en back-end, en werk met sterke encapsulatiepatronen zoals connectors, adapters en repositories, waardoor onderdelen los vervangbaar en testbaar blijven. Mijn focus ligt op hoge prestaties en beperkte operationele kosten. Daarnaast beheer ik de CI/CD-pijplijn, het netwerk, de datastructuren, de rapportage en de SEO-optimalisatie van de oplossing, met hosting op Google Cloud Run.",
