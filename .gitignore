@@ -1,6 +1,5 @@
 temp/
 output/
-
-# .NET build output
 [Bb]in/
 [Oo]bj/
+.vs/
