@@ -1,4 +1,3 @@
-using System.Text.Json;
 using QuestPDF.Fluent;
 using QuestPDF.Helpers;
 using QuestPDF.Infrastructure;
@@ -29,14 +28,6 @@ public sealed class ResumePdfDocument : IDocument
         ["proficient"] = 0.8f,
         ["expert"] = 0.8f,
         ["master"] = 1f
-    };
-
-    private static readonly Dictionary<string, string> PersonalDetailLabels = new(StringComparer.OrdinalIgnoreCase)
-    {
-        ["maritalStatus"] = "Burgerlijke staat",
-        ["birthDate"] = "Geboortedatum",
-        ["birthPlace"] = "Geboorteplaats",
-        ["nationality"] = "Nationaliteit"
     };
 
     private readonly Resume _resume;
@@ -139,7 +130,6 @@ public sealed class ResumePdfDocument : IDocument
             ComposeSidebarPhoto(column);
             ComposeSidebarName(column);
             ComposeSidebarContact(column);
-            ComposeSidebarPersonalDetails(column);
             ComposeSidebarSkills(column);
         });
     }
@@ -259,33 +249,6 @@ public sealed class ResumePdfDocument : IDocument
                         .FontSize(8.5f)
                         .FontColor(SidebarText);
                 }
-            }
-        });
-    }
-
-    private void ComposeSidebarPersonalDetails(ColumnDescriptor column)
-    {
-        List<(string Label, string Value)> details = ComposePersonalDetails();
-
-        if (details.Count == 0)
-        {
-            return;
-        }
-
-        column.Item().Column(item =>
-        {
-            AddSidebarSectionTitle(item, "Persoonlijk");
-
-            foreach ((string label, string value) in details)
-            {
-                item.Item()
-                    .PaddingBottom(3)
-                    .Text(text =>
-                    {
-                        text.DefaultTextStyle(style => style.FontSize(8.5f).FontColor(SidebarMuted).LineHeight(1.25f));
-                        text.Span($"{label}: ").Bold().FontColor(SidebarText);
-                        text.Span(value);
-                    });
             }
         });
     }
@@ -1001,59 +964,5 @@ public sealed class ResumePdfDocument : IDocument
         }
 
         return string.Join(", ", parts);
-    }
-
-    private List<(string Label, string Value)> ComposePersonalDetails()
-    {
-        List<(string Label, string Value)> details = [];
-
-        foreach (KeyValuePair<string, JsonElement> additionalProperty in _resume.Basics?.AdditionalProperties ?? new Dictionary<string, JsonElement>())
-        {
-            string label = PersonalDetailLabels.TryGetValue(additionalProperty.Key, out string? mapped)
-                ? mapped
-                : Humanize(additionalProperty.Key);
-
-            string value = FormatExtensionValue(additionalProperty.Key, additionalProperty.Value);
-
-            if (value.Length > 0)
-            {
-                details.Add((label, value));
-            }
-        }
-
-        return details;
-    }
-
-    private static string FormatExtensionValue(string key, JsonElement value)
-    {
-        switch (value.ValueKind)
-        {
-            case JsonValueKind.String:
-                string text = value.GetString() ?? string.Empty;
-                return key.Equals("birthDate", StringComparison.OrdinalIgnoreCase)
-                    ? PartialDateFormatter.Format(text)
-                    : text;
-            case JsonValueKind.Array:
-                return string.Join(", ", value.EnumerateArray().Where(item => item.ValueKind == JsonValueKind.String).Select(item => item.GetString()));
-            default:
-                return value.ToString();
-        }
-    }
-
-    private static string Humanize(string key)
-    {
-        System.Text.StringBuilder builder = new System.Text.StringBuilder();
-
-        foreach (char character in key)
-        {
-            if (builder.Length > 0 && char.IsUpper(character))
-            {
-                builder.Append(' ');
-            }
-
-            builder.Append(char.ToLowerInvariant(character));
-        }
-
-        return builder.Length == 0 ? key : char.ToUpperInvariant(builder[0]) + builder.ToString(1, builder.Length - 1);
     }
 }
