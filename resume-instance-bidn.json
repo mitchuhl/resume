@@ -2,11 +2,11 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "basics": {
     "name": "Michael de Graaf",
-    "label": "Lead Developer",
+    "label": "Lead Software Engineer",
     "email": "mrdegraaf@gmail.com",
     "phone": "+31625360524",
     "url": "https://www.probust.eu",
-    "summary": "Ik beschik over ruime ervaring in softwareontwikkeling, architectuur, data en integratie. Persoonlijk ben ik gestructureerd, leergierig, coachend en een echte teamspeler met leiderschapskwaliteiten. Privé ben ik vader van drie kinderen en maak ik graag gebruik van de bergen en de natuur door te mountainbiken en te hardlopen.",
+    "summary": "Software engineer en technisch architect met bijna twintig jaar ervaring in de Microsoft wereld: C#, .NET, Azure en SQL Server. Ik bouw veilige koppelingen en platformen waar organisaties dagelijks op vertrouwen, onder meer voor de zorg sector en woningcorporaties en in een omgeving waar ISO certificering en pentests bij horen. Ik geef leiding aan ontwikkelaars, bewaak de kwaliteit met code reviews en borg kennisoverdracht.",
     "location": {
       "address": "Colijnstraat 5",
       "city": "Culemborg",
@@ -33,7 +33,7 @@
       "position": "Product Owner, Senior Developer",
       "startDate": "2024-04",
       "location": "Oosterhout, Nederland",
-      "description": "KWEEKERS ontwikkelt U-Turn, een low-code integratieplatform waarmee applicaties zonder programmeerkennis met elkaar verbonden worden. Mijn rol: product owner en senior developer.",
+      "description": "KWEEKERS ontwikkelt U-Turn voor o.a. de zorg sector. Een low-code integratieplatform waarmee applicaties zonder programmeerkennis met elkaar verbonden worden.",
       "summary": "Als product owner en senior developer bewaak ik de kwaliteit en beveiliging van het platform, houd de frameworks up-to-date om onze ISO-certificering te waarborgen en werk samen met een externe beveiligingspartij die pentests uitvoert, waarbij ik bevindingen direct laat oplossen. Daarnaast ondersteun ik migraties tussen pakketten, zodat dubbele gegevensinvoer wordt voorkomen en gegevens actueel blijven.",
       "highlights": [
         "Schaalbare Kubernetes-clusters die meeschalen met het gebruik",
@@ -47,8 +47,8 @@
       "position": "Eigenaar",
       "startDate": "2025-05",
       "location": "Culemborg, Nederland",
-      "description": "Probust is een eenmansbedrijf dat het Probust CMS-platform ontwikkelt: een multi-tenant SaaS-oplossing waarmee met AI websites uit één foto worden gegenereerd. Mijn rol: eigenaar, architect en full-stack developer.",
-      "summary": "Als eigenaar ben ik verantwoordelijk voor de volledige architectuur en full-stack ontwikkeling van het platform, met aandacht voor prestaties, onderhoudbaarheid en lage operationele kosten. Ik beheer de datastructuren, de rapportage, het netwerk, de CI/CD-pijplijn en de SEO-optimalisatie van de oplossing.",
+      "description": "Probust is een eenmansbedrijf dat het Probust CMS-platform ontwikkelt: een multi-tenant SaaS-oplossing waarmee met AI websites uit één foto worden gegenereerd.",
+      "summary": "Naast mijn fulltime baan bij KWEEKERS ben ik als eigenaar verantwoordelijk voor de volledige architectuur en full-stack ontwikkeling van het Probust platform. Met aandacht voor prestaties, onderhoudbaarheid en lage operationele kosten. Ik beheer de datastructuren, de rapportage, het netwerk, de CI/CD-pijplijn en de SEO-optimalisatie van de oplossing.",
       "highlights": [
         "Applicatielandschap met reverse proxy, front-end en back-end",
         "Encapsulatiepatronen: connectors, adapters en repositories",
@@ -64,10 +64,10 @@
       "startDate": "2021-07",
       "endDate": "2024-04",
       "location": "Utrecht, Nederland",
-      "description": "DataBalk heeft in juli 2021 Kubion overgenomen en levert sindsdien software en integraties aan woningcorporaties. Mijn rol: product owner.",
-      "summary": "Als product owner leidde ik een team van vier tot zes developers en begeleidde ik een team in Zuid-Afrika, waarnaartoe ik regelmatig reisde. Ik was verantwoordelijk voor de integratie tussen IRIS- en ERP-systemen en de ontwikkeling van IRIS-suitecomponenten, met aandacht voor continuïteit en kennisoverdracht na de overname van Kubion. Privacy en beveiliging stonden voorop: ik werkte AVG-bewust met geanonimiseerde data en een strikte scheiding van huurdersdata, en voerde code reviews uit via pull requests met verplichte goedkeuring.",
+      "description": "DataBalk heeft in juli 2021 Kubion overgenomen en levert sindsdien software en integraties aan woningcorporaties.",
+      "summary": "Als product owner leidde ik een team van vier tot zes developers en begeleidde ik een team in Zuid-Afrika. Ik was verantwoordelijk voor de integratie tussen IRIS- en ERP-systemen en de ontwikkeling van IRIS-suitecomponenten, met aandacht voor continuïteit en kennisoverdracht na de overname van Kubion. Privacy en beveiliging stonden voorop. AVG was een belangrijk thema en dat onderstreepte het belang van strikte scheiding van huurdersdata. Tijdens mijn bezoeken aan Zuid-Afrika heb ik de teams die aan IRIS ontwikkelden en de teams die support leverden opgeleid in een meerdaagse training.",
       "highlights": [
-        "Clientapplicatie voor servicevoorzienaren",
+        "Clientapplicatie voor klantenservice",
         "Tenantportaal en intranet",
         "Beeldverwerker",
         "IRIS back-end",
@@ -77,33 +77,21 @@
     },
     {
       "name": "Kubion B.V.",
-      "position": "Technisch Architect",
-      "startDate": "2018-10",
-      "endDate": "2021-07",
-      "location": "Nederland",
-      "description": "Kubion B.V. is een softwareleverancier voor de woningcorporatiesector. Mijn rol: technisch architect.",
-      "summary": "Als technisch architect was ik verantwoordelijk voor KIM, de Kubion Integratie Module die klantenservice en tenantportalen verbindt met ERP en andere systemen. Ik centraliseerde en standaardiseerde alle maatwerkoplossingen zodat zij centraal onderhouden konden worden, en fungeerde als brug tussen product owner, stakeholders en het ontwikkelteam. Migraties, kennisoverdracht en het verbinden van stakeholders en developers waren daarbij kerntaken, precies wat de overgang van een externe ontwikkelpartner naar een intern team vraagt.",
-      "highlights": [
-        "Real-time, batch- en pub-sub gegevenssynchronisatie",
-        "Uitrol van maatwerk bij nieuwe en bestaande klanten",
-        "Code reviews met verplichte goedkeuring via pull requests",
-        "Mentoren van collega's en trainees",
-        "ASP.NET, MSSQL, SSAS, JavaScript, Ajax en REST-services"
-      ]
-    },
-    {
-      "name": "Kubion B.V.",
-      "position": "Software Engineer",
+      "position": "Software Engineer, Technisch Architect",
       "startDate": "2007-04",
-      "endDate": "2018-10",
-      "location": "Nieuwegein, Nederland",
-      "description": "Kubion B.V. is een softwareleverancier voor de woningcorporatiesector. Mijn rol: software engineer.",
-      "summary": "Ruim elf jaar lang ontwikkelde ik webapplicaties voor Nederlandse woningcorporaties en leverde ik bijdragen aan de IRIS-suite, ETL-tools en SSIS-ondersteuning. Daarnaast begeleidde ik klantimplementaties.",
+      "endDate": "2021-07",
+      "location": "Utrecht, Nederland",
+      "description": "Kubion B.V. is een softwareleverancier voor de woningcorporatiesector.",
+      "summary": "Ruim veertien jaar lang ontwikkelde ik webapplicaties voor Nederlandse woningcorporaties en leverde ik bijdragen aan de IRIS-suite, ETL-tools en SSIS-ondersteuning. Daarnaast begeleidde ik klantimplementaties. Als technisch architect was ik verantwoordelijk voor KIM, de Kubion Integratie Module die klantenservice en tenantportalen verbindt met ERP en andere systemen. Ik centraliseerde en standaardiseerde alle maatwerkoplossingen zodat zij centraal onderhouden konden worden, en fungeerde als brug tussen product owner, stakeholders en het ontwikkelteam. Migraties, kennisoverdracht en het verbinden van stakeholders en developers waren daarbij kerntaken.",
       "highlights": [
         "Normalisatie- en waarderingsapplicatie",
         "Beheerdersapplicatie voor VvE's",
         "Eerste tenantportaal front-end",
-        "ASP.NET, MSSQL, SSAS, JavaScript, Ajax en REST-services"
+        "ASP.NET, MSSQL, SSAS, JavaScript, Ajax en REST-services",
+        "Real-time, batch- en pub-sub gegevenssynchronisatie",
+        "Uitrol van maatwerk bij nieuwe en bestaande klanten",
+        "Code reviews met verplichte goedkeuring via pull requests",
+        "Mentoren van collega's en trainees"
       ]
     }
   ],
@@ -145,46 +133,36 @@
   "awards": [],
   "certificates": [
     {
-      "name": "Microsoft Certified: Azure Fundamentals",
+      "name": "Azure Fundamentals",
       "issuer": "Microsoft"
     },
     {
       "name": "Foundational C# with Microsoft",
       "issuer": "Microsoft"
-    },
-    {
-      "name": "Cisco Certificate",
-      "issuer": "Cisco"
     }
   ],
   "publications": [],
   "skills": [
     {
-      "name": ".NET",
+      "name": "C# .NET",
       "type": "Softwareontwikkeling",
       "level": "Expert",
       "lastUsed": "2026",
       "usedAt": "Probust, Kubion B.V., Wija Koers Relatiemarketing, Ifective ICT Services bv",
       "keywords": [
-        "C#",
-        "C# .NET",
-        "dotnet",
-        "ASP.NET",
-        "ASP.NET MVC"
       ]
     },
     {
       "name": "Azure",
       "type": "Cloud",
-      "level": "Expert",
+      "level": "Advanced",
       "lastUsed": "2026",
       "usedAt": "Kubion B.V., DataBalk",
       "keywords": [
-        "Azure",
-        "Azure DevOps",
-        "App Service",
-        "Azure Functions",
-        "Azure SQL",
+        "DevOps",
+        "Service",
+        "Functions",
+        "SQL",
         "Key Vault",
         "Entra ID",
         "Storage",
@@ -193,7 +171,7 @@
       ]
     },
     {
-      "name": "Back-end ontwikkeling",
+      "name": "Back end",
       "type": "Softwareontwikkeling",
       "level": "Expert",
       "lastUsed": "2026",
@@ -212,24 +190,17 @@
     {
       "name": "Security en privacy",
       "type": "Softwareontwikkeling",
-      "level": "Expert",
+      "level": "Advanced",
       "lastUsed": "2026",
       "usedAt": "KWEEKERS, DataBalk, Kubion B.V.",
       "keywords": [
         "OAuth2",
-        "OpenID Connect",
         "JWT",
         "RBAC",
-        "Authentication",
-        "Authorisation",
         "Encryption",
-        "Logging",
         "Audit trails",
-        "GDPR (AVG)",
-        "Anonimisatie van data",
-        "Scheiding van huurdersdata",
-        "ISO-certificering",
-        "Pentests"
+        "AVG",
+        "ISO"
       ]
     },
     {
@@ -239,21 +210,19 @@
       "lastUsed": "2026",
       "usedAt": "Probust, Kubion B.V., DataBalk, KWEEKERS",
       "keywords": [
-        "applicatielandschap (reverse proxy, front-end, back-end)",
-        "encapsulatie (connectors, adapters, repository)",
-        "multi-tenant SaaS",
-        "hoge prestaties",
-        "centralisatie en standaardisatie van maatwerk",
-        "pub-sub near realtime synchronisatie"
       ]
     },
     {
-      "name": "MSSQL (Microsoft SQL Server)",
+      "name": "SQL",
       "type": "Database",
       "level": "Expert",
       "lastUsed": "2026",
       "usedAt": "Probust, Kubion B.V., DataBalk",
-      "keywords": []
+      "keywords": [
+        "Microsoft SQL Server",
+        "PostgreSQL",
+        "MySQL"
+      ]
     },
     {
       "name": "ETL",
@@ -262,10 +231,8 @@
       "lastUsed": "2026",
       "usedAt": "Kubion B.V., DataBalk, KWEEKERS",
       "keywords": [
-        "Initial Load",
-        "Incremental Load",
-        "Pub-Sub",
-        "webhooks",
+        "Initial en Incremental Load",
+        "Pub-Sub en webhooks",
         "Reporting",
         "Systeemintegratie"
       ]
@@ -316,44 +283,24 @@
       "keywords": [
         "Code Review",
         "pull requests met verplichte goedkeuring",
-        "AI-ondersteunde code review (Code Rabbit, GitLab Duo)",
-        "Subversion (svn)",
-        "Git (BitBucket)",
-        "Git (Azure DevOps)",
-        "GitLab",
-        "GitHub",
-        "pipeline",
-        "CI/CD"
+        "AI-ondersteunde code review",
+        "Git (BitBucket, DevOps, GitLab, GitHub)",
+        "CI/CD pipelines"
       ]
     },
     {
       "name": "Teamleiderschap en coaching",
       "type": "Product Management",
-      "level": "Expert",
+      "level": "Advanced",
       "lastUsed": "2024",
       "usedAt": "DataBalk, Kubion B.V.",
       "keywords": [
-        "leiding geven aan ontwikkelingsteams",
-        "begeleiden van teams op afstand",
-        "mentoring van developers en trainees",
-        "coaching",
-        "onboarding van nieuwe collega's",
-        "kennisoverdracht",
-        "hulp bij technische keuzes",
-        "developers laten groeien naar leadrollen",
-        "code reviews",
-        "pull requests met verplichte goedkeuring",
-        "reviewrichtlijnen",
-        "pair programming"
+        "Leiding geven aan ontwikkelingsteams",
+        "Begeleiden van teams op afstand",
+        "Mentoring van developers en trainees",
+        "Onboarding van nieuwe collega's",
+        "Pair programming"
       ]
-    },
-    {
-      "name": "Data-architectuur",
-      "type": "Database",
-      "level": "Expert",
-      "lastUsed": "2024",
-      "usedAt": "Kubion B.V., DataBalk",
-      "keywords": []
     }
   ],
   "languages": [
@@ -396,7 +343,7 @@
   "projects": [
     {
       "name": "KIM",
-      "description": "KIM, de Kubion Integratie Module, integreert tenant- en klantenserviceportalen met ERP en andere systemen door gebruik te maken van gegevensadapters en gegevenssynchronisatie die zowel een eerste keer als incrementeel wordt geladen en ook pub-sub ondersteunt. Na de overname van Kubion door DataBalk in juli 2021 werd KIM binnen DataBalk voortgezet tot april 2024, waarbij al het maatwerk werd gecentraliseerd, gestandaardiseerd, uitgerold bij nieuwe en bestaande klanten en centraal onderhouden.",
+      "description": "KIM, de Kubion Integratie Module, integreert huurder- en klantenserviceportalen met ERP en andere systemen door gebruik te maken van gegevensadapters en gegevenssynchronisatie die zowel een eerste keer als incrementeel wordt geladen en ook pub-sub ondersteunt. Resultaat: al het maatwerk werd gecentraliseerd, gestandaardiseerd, uitgerold bij nieuwe en bestaande klanten en centraal onderhouden. Na de overname van Kubion door DataBalk in juli 2021 werd KIM binnen DataBalk voortgezet.",
       "startDate": "2015-01",
       "endDate": "2024-04",
       "url": "https://www.corporatiegids.nl/nl/nieuws/jos_balk_databalk_overname_kubion_versterkt_onze_positie_in_het_domein_klantenservice-6885",
