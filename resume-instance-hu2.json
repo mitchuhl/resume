@@ -1,0 +1,374 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "basics": {
+    "name": "Michael de Graaf",
+    "label": "Product Owner en Software Engineer",
+    "email": "mrdegraaf@gmail.com",
+    "phone": "+31625360524",
+    "url": "https://www.probust.eu",
+    "summary": "Ruime ervaring als Product Owner, architect en software engineer in complexe IT-landschappen met meer dan honderd integraties. Ik breng uiteenlopende belangen samen, stel prioriteiten op basis van waarde en vertaal strategische doelen naar een concrete roadmap. Mijn kracht zit in stakeholdermanagement, conceptueel vermogen en het verbinden van techniek met de business, met oog voor betrouwbare en schaalbare integratieplatforms. Ik werk graag met eigen initiatief en heldere communicatie.",
+    "location": {
+      "address": "Colijnstraat 5",
+      "city": "Culemborg",
+      "region": "Gelderland",
+      "postalCode": "4102EZ",
+      "countryCode": "NL"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "michael-de-graaf-software-developer",
+        "url": "https://www.linkedin.com/in/michael-de-graaf-software-developer/"
+      }
+    ],
+    "maritalStatus": "Married",
+    "birthDate": "1981-10-15",
+    "birthPlace": "Meppel, NL",
+    "nationality": "Dutch",
+    "middleName": "Raymond"
+  },
+  "work": [
+    {
+      "name": "KWEEKERS",
+      "position": "Product Owner, Senior Developer",
+      "startDate": "2024-04",
+      "location": "Oosterhout",
+      "description": "KWEEKERS ontwikkelt het low-code integratieplatform U-Turn waarmee organisaties applicaties aan elkaar koppelen zonder programmeerkennis.",
+      "summary": "Als Product Owner en Senior Developer bepaal ik samen met stakeholders en het team welke integraties de meeste waarde toevoegen en stel ik heldere prioriteiten voor de doorontwikkeling van het platform. Ik bewaak de roadmap en stem af met klanten en interne opdrachtgevers over wensen, mogelijkheden, afhankelijkheden en planning. Daarnaast zorg ik voor inzicht in het integratielandschap met de bestaande koppelingen en technische ontwikkelingen. Daarbij ondersteun ik het team bij het realiseren van een flexibel, schaalbaar en betrouwbaar platform dat op Kubernetes-clusters meeschaalt met het gebruik.",
+      "highlights": [
+        "Webhooks voor Microsoft Graph en AFAS",
+        "ISO-certificering, periodieke penetratietesten",
+        "AI-ondersteunde code reviews",
+        "AI-integratie in U-Turn"
+      ]
+    },
+    {
+      "name": "Probust",
+      "position": "Owner",
+      "startDate": "2025-05",
+      "location": "Culemborg",
+      "description": "Probust is een eenmanszaak voor standaard softwareontwikkeling.",
+      "summary": "Als eigenaar en architect lever ik een compleet businessplatform gericht op ondernemers. Ik ontwikkel een multi-tenant SaaS CMS-platform met onder andere websitegeneratie op basis van één foto, een webshop met betalingen en levering en beheer van catalogi, reviews en contactformulieren. Ik verzorg de architectuur met connectors, adapters en het repository-patroon, beheer de hosting op Google Cloud en pas CI/CD toe om frequent nieuwe functionaliteit te leveren.",
+      "highlights": [
+        "AI-generatie van websites op basis van één foto",
+        "Multi-tenant SaaS CMS-architectuur",
+        "Complete applicatiearchitectuur: reverse proxy, front-end en back-end",
+        "Betaalbaar product door lage operationele kosten"
+      ]
+    },
+    {
+      "name": "DataBalk",
+      "position": "Product Owner",
+      "startDate": "2021-07",
+      "endDate": "2024-04",
+      "location": "Utrecht",
+      "description": "DataBalk nam in juli 2021 Kubion over en zette de integratiemodule KIM voort.",
+      "summary": "Als Product Owner leidde ik een team van vier tot zes developers en een team in Zuid-Afrika, waarvoor ik regelmatig reisde. Ik bepaalde samen met opdrachtgevers en architecten de prioriteiten en de roadmap voor de integratie tussen IRIS en ERP-systemen en de doorontwikkeling van de IRIS-suite. Daarbij hield ik rekening met AVG-regelgeving en een strikte scheiding van de gegevens van woningcorporaties en hun huurders. Wensen, afhankelijkheden en planning stemde ik af met de stakeholders.",
+      "highlights": [
+        "Integratie tussen IRIS en ERP-systemen",
+        "Leidinggeven aan een development team",
+        "Doorontwikkeling van IRIS-suitecomponenten"
+      ]
+    },
+    {
+      "name": "Kubion B.V.",
+      "position": "Software Engineer, Technical Architect",
+      "startDate": "2007-04",
+      "endDate": "2021-07",
+      "location": "Utrecht",
+      "description": "Kubion B.V. ontwikkelt webapplicaties voor Nederlandse woningcorporaties.",
+      "summary": "Als software engineer bouwde ik webapplicaties voor woningcorporaties, waaronder de IRIS-suite, een huurdersportaal, ETL-tooling en SSIS-ondersteuning. Daarnaast verzorgde ik klantimplementaties. Ik ontwikkelde onder andere een normalisatie- en waarderingsapplicatie en een beheermodule voor VvE's en bouwde de eerste front-end van het huurdersportaal. In mijn latere rol als technisch architect ontwikkelde ik KIM, de Kubion Integratiemodule, waarmee ik klantenservice (KCC) en huurdersportalen aan ERP-systemen koppelde via realtime en batch-gebaseerde datasync, inclusief pub-sub near-realtime synchronisatie. Verder integreerde KIM met andere applicaties zoals betaalproviders (o.a. iDEAL), vacaturebanken en document management systemen. Ik centraliseerde en standaardiseerde al het maatwerk, zodat het bij nieuwe en bestaande klanten kon worden uitgerold en centraal onderhouden. Daarbij fungeerde ik als brug tussen product owner, stakeholders en team, begeleidde ik zes tot tien developers en trainees en voerde ik gestructureerde code reviews uit met pull requests en verplichte approval.",
+      "highlights": [
+        "Applicaties voor Nederlandse woningcorporaties",
+        "KIM (Kubion Integratiemodule) als centrale integratielaag",
+        "Realtime en batch-gebaseerde datasync, inclusief pub-sub",
+        "IRIS-suite en de eerste front-end van het huurdersportaal",
+        "ETL-tooling en SSIS-ondersteuning",
+        "Schakelen tussen stakeholders, product owner en team"
+      ]
+    },
+    {
+      "name": "Wija Koers Relatiemarketing",
+      "position": "System Administrator, Assistant Programmer",
+      "startDate": "2001-08",
+      "endDate": "2007-04",
+      "location": "Hoogersmilde",
+      "description": "Wija Koers Relatiemarketing levert oplossingen voor het MKB op het platform van Lotus.",
+      "summary": "Ik ben begonnen als stagiair met onderzoek naar zoekmachines. Als assistent programmeur werkte ik aan een zoekmachineproduct, registratiesoftware, SEO-onderzoeksrapportages, een SEO-onderzoeksapplicatie, klantapplicaties en een tijdregistratiesysteem. Als systeembeheerder beheerde ik servers en werkplekken en verzorgde ik domeinnaamregistratie, e-mailbeheer en DNS. Daarnaast installeerde ik applicaties en hield ik mij bezig met systeem- en databaseontwerp en de ontwikkeling van Lotus-webapplicaties.",
+      "highlights": [
+        "Ontwikkeling van een zoekmachineproduct dat in 2006 uitgroeide tot een van de bestverkopende producten",
+        "Beheer van Windows- en Linuxservers en werkplekken",
+        "Ontwikkeling van Lotus-webapplicaties",
+        "Systeem- en databaseontwerp"
+      ]
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "Christelijke Hogeschool Windesheim, Zwolle, NL",
+      "area": "Informatica",
+      "studyType": "Bachelor of Science (BSc)",
+      "startDate": "2003",
+      "endDate": "2006",
+      "courses": [],
+      "url": "https://www.windesheim.nl"
+    },
+    {
+      "institution": "Deltion College, Zwolle, NL",
+      "area": "Middenkaderfunctionaris kantoorautomatisering",
+      "studyType": "MBO",
+      "startDate": "1999",
+      "endDate": "2003",
+      "courses": [],
+      "url": "https://www.deltion.nl"
+    }
+  ],
+  "awards": [],
+  "certificates": [
+    {
+      "name": "Microsoft Certified: Azure Fundamentals",
+      "issuer": "Microsoft"
+    },
+    {
+      "name": "Foundational C# with Microsoft",
+      "issuer": "Microsoft"
+    }
+  ],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Product Owner",
+      "type": "Agile",
+      "level": "Expert",
+      "lastUsed": "2026",
+      "usedAt": "DataBalk, KWEEKERS",
+      "keywords": [
+        "Sprint Planning",
+        "User Story Mapping",
+        "Stakeholdermanagement",
+        "Release Management"
+      ]
+    },
+    {
+      "name": "SCRUM",
+      "type": "Agile",
+      "level": "Expert",
+      "lastUsed": "2026",
+      "usedAt": "DataBalk, KWEEKERS, Kubion B.V.",
+      "keywords": [
+        "Scrum Master",
+        "Sprint",
+        "Jira",
+        "Azure DevOps"
+      ]
+    },
+    {
+      "name": "Architecture",
+      "type": "Software Development",
+      "level": "Expert",
+      "lastUsed": "2026",
+      "usedAt": "Probust, Kubion B.V., DataBalk, KWEEKERS",
+      "keywords": [
+        "Enterprise Architecture",
+        "Encapsulation",
+        "Multi-tenant SaaS",
+        "Schaalbaarheid",
+        "Performance"
+      ]
+    },
+    {
+      "name": "Back end",
+      "type": "Software Development",
+      "level": "Expert",
+      "lastUsed": "2026",
+      "usedAt": "Probust, KWEEKERS, DataBalk, Kubion B.V.",
+      "keywords": [
+        "REST",
+        "API",
+        "SOAP",
+        "GraphQL",
+        "OpenAPI",
+        "Swagger",
+        "System Integration"
+      ]
+    },
+    {
+      "name": "Azure",
+      "type": "Cloud",
+      "level": "Advanced",
+      "lastUsed": "2026",
+      "usedAt": "Kubion B.V., DataBalk",
+      "keywords": [
+        "DevOps",
+        "App Service",
+        "Functions",
+        "SQL",
+        "Key Vault",
+        "Entra ID",
+        "Storage",
+        "Service Bus",
+        "Application Insights"
+      ]
+    },
+    {
+      "name": "ETL",
+      "type": "Database",
+      "level": "Expert",
+      "lastUsed": "2026",
+      "usedAt": "Kubion B.V., DataBalk, KWEEKERS",
+      "keywords": [
+        "Initial Load",
+        "Incremental Load",
+        "Pub-Sub",
+        "Webhooks",
+        "Reporting",
+        "System Integration"
+      ]
+    },
+    {
+      "name": "C# .NET",
+      "type": "Software Development",
+      "level": "Expert",
+      "lastUsed": "2026",
+      "usedAt": "Probust, Kubion B.V., Wija Koers Relatiemarketing, Ifective ICT Services bv",
+      "keywords": []
+    },
+    {
+      "name": "Team Leadership",
+      "type": "Product Management",
+      "level": "Expert",
+      "lastUsed": "2024",
+      "usedAt": "DataBalk, Kubion B.V.",
+      "keywords": [
+        "Coaching",
+        "Onboarding",
+        "Kennisoverdracht",
+        "Code reviews",
+        "Pull requests",
+        "Kwaliteitsborging"
+      ]
+    },
+    {
+      "name": "Beveiliging",
+      "type": "Software Development",
+      "level": "Expert",
+      "lastUsed": "2026",
+      "usedAt": "KWEEKERS, DataBalk, Kubion B.V.",
+      "keywords": [
+        "OAuth2",
+        "OpenID Connect",
+        "JWT",
+        "RBAC",
+        "GDPR (AVG)",
+        "ISO"
+      ]
+    },
+    {
+      "name": "Google Cloud",
+      "type": "Cloud",
+      "level": "Advanced",
+      "lastUsed": "2026",
+      "usedAt": "KWEEKERS",
+      "keywords": []
+    },
+    {
+      "name": "Kubernetes",
+      "type": "Cloud",
+      "level": "Intermediate",
+      "lastUsed": "2026",
+      "usedAt": "KWEEKERS",
+      "keywords": [
+        "Clusters",
+        "Scaling on usage"
+      ]
+    },
+    {
+      "name": "Data Architecture",
+      "type": "Database",
+      "level": "Expert",
+      "lastUsed": "2024",
+      "usedAt": "Kubion B.V., DataBalk",
+      "keywords": []
+    },
+    {
+      "name": "Versiebeheer",
+      "type": "Software Development",
+      "level": "Expert",
+      "lastUsed": "2026",
+      "usedAt": "Kubion B.V., DataBalk, KWEEKERS, Probust",
+      "keywords": [
+        "Git",
+        "(AI) Code reviews",
+        "CI/CD"
+      ]
+    },
+    {
+      "name": "Microsoft SQL Server",
+      "type": "Database",
+      "level": "Expert",
+      "lastUsed": "2026",
+      "usedAt": "Probust, Kubion B.V., DataBalk",
+      "keywords": []
+    },
+    {
+      "name": "PostgreSQL",
+      "type": "Database",
+      "level": "Expert",
+      "lastUsed": "2026",
+      "usedAt": "KWEEKERS",
+      "keywords": []
+    }
+  ],
+  "languages": [
+    {
+      "language": "Dutch",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "C1"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Software Development",
+      "keywords": [
+        "Learn new languages",
+        "High performance challenges",
+        "Personal projects"
+      ]
+    },
+    {
+      "name": "Sports",
+      "keywords": [
+        "Running",
+        "Mountainbike"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Frank Blom",
+      "reference": "Eigenaar bij Kubion, nauw samengewerkt bij het bouwen van softwareoplossingen voor woningcorporaties. Contactgegevens zijn op aanvraag beschikbaar."
+    },
+    {
+      "name": "Jason Landbrug",
+      "reference": "Werkte bij KWEEKERS met Michael in hetzelfde team als senior developer. Contactgegevens zijn op aanvraag beschikbaar."
+    }
+  ],
+  "projects": [],
+  "meta": {
+    "canonical": "https://raw.githubusercontent.com/mitchuhl/resume/refs/heads/main/resume.json",
+    "version": "v0.23.0",
+    "lastModified": "2026-11-16T18:33:17Z",
+    "vacancyContext": {
+      "companyType": "Highschool / Education",
+      "role": "Product Owner Systeemintegratie",
+      "vacancySource": "https://www.hu.nl/werkenbij/vacatures/product-owner-systeemintegratie-931",
+      "vacancyLanguage": "nl",
+      "readerRole": "Hiring manager (manager IM&ICT)",
+      "audience": "De aanstellende leidinggevende (manager IM&ICT) bij Hogeschool Utrecht. Deze lezer zoekt een Product Owner die prioriteiten stelt, stakeholders verbindt en een betrouwbaar, schaalbaar integratieplatform realiseert in een complexe IT-omgeving met meer dan honderd integraties. Kwaliteit, communicatie en betrouwbaarheid wegen zwaar."
+    }
+  }
+}

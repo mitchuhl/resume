@@ -395,7 +395,7 @@
     {
       "name": "Google Cloud",
       "type": "Cloud",
-      "level": "Expert",
+      "level": "Advanced",
       "lastUsed": "2026",
       "usedAt": "KWEEKERS",
       "keywords": []
@@ -408,7 +408,7 @@
       "usedAt": "Probust, Kubion B.V., Wija Koers Relatiemarketing, Ifective ICT Services bv",
       "keywords": [
         "C# .NET",
-        "dotnet",
+        "Dotnet",
         "ASP.NET",
         "ASP.NET MVC"
       ]
@@ -447,14 +447,14 @@
       "lastUsed": "2026",
       "usedAt": "KWEEKERS",
       "keywords": [
-        "clusters",
-        "scaling on usage"
+        "Clusters",
+        "Scaling on usage"
       ]
     },
     {
       "name": "Azure",
       "type": "Cloud",
-      "level": "Expert",
+      "level": "Advanced",
       "lastUsed": "2026",
       "usedAt": "Kubion B.V., DataBalk",
       "keywords": [
@@ -493,7 +493,7 @@
       "keywords": []
     },
     {
-      "name": "MSSQL (Microsoft SQL Server)",
+      "name": "Microsoft SQL Server",
       "type": "Database",
       "level": "Expert",
       "lastUsed": "2026",
@@ -501,19 +501,19 @@
       "keywords": []
     },
     {
-      "name": "Software Architecture",
+      "name": "Architecture",
       "type": "Software Development",
       "level": "Expert",
       "lastUsed": "2026",
       "usedAt": "Probust, Kubion B.V., DataBalk, KWEEKERS",
       "keywords": [
-        "application landscape (reverse proxy, front end, back end)",
-        "encapsulation (connectors, adapters, repository)",
-        "multi-tenant SaaS",
-        "high performance",
-        "centralized and standardized custom work",
-        "kubernetes clusters that scale on usage",
-        "pub-sub near realtime sync"
+        "Application landscape (reverse proxy, front end, back end)",
+        "Encapsulation (connectors, adapters, repository)",
+        "Multi-tenant SaaS",
+        "High performance",
+        "Centralized and standardized custom work",
+        "Kubernetes clusters that scale on usage",
+        "Pub-sub near realtime sync"
       ]
     },
     {
@@ -529,13 +529,13 @@
         "Git (Azure DevOps)",
         "GitLab",
         "GitHub",
-        "pipeline",
+        "Pipeline",
         "CI/CD",
         "AI supported code review (Code Rabbit, GitLab Duo)"
       ]
     },
     {
-      "name": "Back end development",
+      "name": "Back end",
       "type": "Software Development",
       "level": "Expert",
       "lastUsed": "2026",
@@ -626,7 +626,7 @@
         "Initial Load",
         "Incremental Load",
         "Pub-Sub",
-        "webhooks",
+        "Webhooks",
         "Reporting",
         "System Integration"
       ]
@@ -638,16 +638,16 @@
       "lastUsed": "2024",
       "usedAt": "DataBalk, Kubion B.V.",
       "keywords": [
-        "coaching",
-        "mentoring developers and trainees",
-        "onboarding new colleagues",
-        "knowledge transfer",
-        "help with technical decisions",
-        "growing developers into lead roles",
-        "code reviews",
-        "pull requests with mandatory approval",
-        "review guidelines",
-        "pair programming"
+        "Coaching",
+        "Mentoring developers and trainees",
+        "Onboarding new colleagues",
+        "Knowledge transfer",
+        "Help with technical decisions",
+        "Growing developers into lead roles",
+        "Code reviews",
+        "Pull requests with mandatory approval",
+        "Review guidelines",
+        "Pair programming"
       ]
     },
     {
@@ -673,7 +673,7 @@
       "lastUsed": "2021",
       "usedAt": "Kubion B.V.",
       "keywords": [
-        "on-prem"
+        "On-prem"
       ]
     },
     {
@@ -703,8 +703,8 @@
       "lastUsed": "2018",
       "usedAt": "Kubion B.V.",
       "keywords": [
-        "back end",
-        "front end"
+        "Back end",
+        "Front end"
       ]
     },
     {

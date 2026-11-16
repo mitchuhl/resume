@@ -40,9 +40,9 @@ Eg. :
 company: custom software development
 role: internship, create vb.net calendar component 
 
-And not: The company creates custom software for big companies. I did internalship at the company and wrote a calendar component.
+And not: The company creates custom software for big companies. I did internship at the company and wrote a calendar component.
 
-Reason for this is that later this resume.json will be input for another agent that makes nices sentences (and only pick relevant pieces for the job I apply to)
+Reason for this is that later this resume.json will be input for another agent that makes nice sentences (and only pick relevant pieces for the job I apply to)
 
 ## AI Writer
 
@@ -56,3 +56,8 @@ Prompt:
 
 ## Resume designer
 
+Run the resume-generator:
+
+```
+dotnet run --project resume-generator
+```
